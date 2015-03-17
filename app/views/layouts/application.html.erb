@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Raisingfunds</title>
+  <title>N.P. Raisingfunds</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+
+<body>
+	<div class="header">
+		<nav id="header_navbar" class="navbar navbar-default navbar-fixed-top deep-orange-bg">
+			<div class="container">
+				<div class="text-center col-xs-12">
+					<a href="http://www.grandraid-reunion.com/" target="_blank"><%= image_tag "logo_ddf.png", class: "col-xs-1 logo-ddf-home" %></a>
+					<h4 id="website_url" class="white col-xs-4 col-xs-push-3" style="padding-top:10px;">Nicolas Privet's Raising Funds</h4>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+	<div class="wrapper">
+		<%= yield %>
+	</div>
+
+	<div class="footer dark-orange-bg white" style="margin-top:100px;">
+		<div class="container" style="padding-top: 15px;">
+			<div class="row" style="padding:10px;">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+		 			<p>Contact me : <br> Nicolas Privet <br> nicolas.privet@freshstudio.vn</p>
+		 			<div class="row">
+		 				<a href="http://www.facebook.com/privet.nicolas?ref=ts&fref=ts"  id="icon_fb">
+		 					<%= image_tag "icon_fb.png", class: "col-lg-3 col-md-3 col-sm-4 col-xs-4" %>
+		 				</a>
+		 				<a href="http://www.freshstudio.vn/"  id="icon_freshstudio">
+		 					<%= image_tag "icon_freshstudio.png", class: "col-lg-4 col-md-3 col-sm-4 col-xs-4" %>
+		 				</a>
+		 			</div>
+		 		</div>
+				
+				<div class="col-lg-3 col-lg-push-6 col-md-2 col-md-push-1 col-sm-2 col-sm-push-1 col-xs-12">
+		 			<p>© 2015 Rémi PRIVET <br> All rights reserved</p>
+		 		</div>
+		 	</div>
+		</div>
+    </div>
 
 </body>
 </html>

@@ -17,6 +17,64 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.amber {
-  color: #ffc107;
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(Roboto-Regular.ttf) format("truetype");
+}
+
+.deep-orange-bg {
+  background-color: #ff5722;
+}
+
+.deep-orange {
+  color: #ff5722;
+}
+
+.dark-orange-bg{
+	background-color: #e64a19;
+}
+
+.dark_orange{
+	color: #e64a19;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.navbar-default {
+    border-color: #ff7043;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.img-home-banner{
+	width:100%;
+}
+
+.logo-ddf-home{
+	position:relative;
+}
+
+.footer{
+	box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.bs-callout {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eee;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 10px 1px 1px 1px;
+    margin: 20px 0;
+    padding: 20px;
+
+	font-size:16px;
+	color:#212121;
+	font-family: 'Roboto Regular';
+}
+.bs-callout-deep-orange{
+    border-top-color: #ffeb3b;
 }

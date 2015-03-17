@@ -5,3 +5,7 @@ rails generate devise:install     # Creates config file, etc.
 rails generate devise user        # Create model class, routes, etc.
 rake db:migrate                   # Create user table
 rails generate devise:views users # Creates (minimal) views
+
+// si ERROR:  While executing gem ... (Encoding::UndefinedConversionError
+    U+2019 to CP850 in conversion from UTF-16LE to UTF-8 to CP850
+taper dans la console > chcp 1252
