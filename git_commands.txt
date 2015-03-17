@@ -1,0 +1,19 @@
+git config --global user.name "Remi Privet"
+git config --global user.email privet.remi@gmail.com
+git config --global push.default matching
+git config --global alias.co checkout
+
+git init
+git add -A
+git status
+git commit -m "Initialize repository"
+git log
+git checkout -f
+
+git remote add origin https://github.com/privetr/raisingfunds.git
+git push -u origin master
+
+git add -A
+git commit -m "second commit"
+git push
+privetr
