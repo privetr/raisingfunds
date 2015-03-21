@@ -29,12 +29,12 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   #config.assets.compile = false
   config.assets.compile = true
-  config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
 
   # Generate digests for assets URLs.
   config.assets.digest = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
+  config.assets.precompile += ['exporting.js', 'highcharts.js']
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache

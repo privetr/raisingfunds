@@ -15,8 +15,8 @@
  *= require rails_bootstrap_forms
  */
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import "bootstrap-sprockets", "bootstrap";
+
 
 @font-face {
     font-family: "Roboto Regular";
@@ -28,7 +28,6 @@ $OrangeDark:#e64a19;
 $White:#ffffff;
 $Yellow:#ffeb3b;
 $YellowDark:#fdd835;
-$Alert:#a94442;
 $Green:#4caf50;
 
 .roboto-regular{
@@ -132,7 +131,7 @@ $Green:#4caf50;
 }
 
 .field_with_errors{
-    color: $Alert;
+    color: #a94442;
     padding:0;
     margin:0;
 }

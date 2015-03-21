@@ -14,3 +14,12 @@ set rails_env=production
 set rails_env=development
 
 rake routes
+rake assets:precompile
+
+su postgres
+postgres=# CREATE USER nameuser WITH PASSWORD ''
+postgres-# CREATE DATABASE namebase
+postgres-# GRANT ALL PRIVILEGES ON DATABASE namebase to nameuser
+postgres-# \q
+
+RAILS_ENV=production Rails s -p 1712 -o 0.0.0.0
