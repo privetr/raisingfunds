@@ -14,7 +14,10 @@
 			<div class="container">
 				<div class="text-center col-xs-12">
 					<a href="http://www.grandraid-reunion.com/" target="_blank"><%= image_tag "logo_ddf.png", class: "col-xs-1 logo-ddf-home" %></a>
-					<h4 id="website_url" class="white col-xs-4 col-xs-push-3" style="padding-top:10px;">Nicolas Privet's Raising Funds</h4>
+					<%= link_to root_path, class: "white col-xs-1", style:"margin-top:20px" do %>
+					  <span class="glyphicon glyphicon-home white"></span>
+					<% end %>
+					<h4 id="website_url" class="white col-xs-4 col-xs-push-2 roboto-regular" style="padding-top:10px;">Nicolas Privet's Raising Funds</h4>
 				</div>
 			</div>
 		</nav>

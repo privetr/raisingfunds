@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
 
 @import "bootstrap-sprockets";
@@ -22,28 +23,44 @@
     src: url(Roboto-Regular.ttf) format("truetype");
 }
 
+$Orange:#ff5722;
+$OrangeDark:#e64a19;
+$White:#ffffff;
+$Yellow:#ffeb3b;
+$YellowDark:#fdd835;
+$Alert:#a94442;
+$Green:#4caf50;
+
+.roboto-regular{
+    font-family: 'Roboto Regular';
+}
+
 .deep-orange-bg {
-  background-color: #ff5722;
+  background-color: $Orange;
 }
 
 .deep-orange {
-  color: #ff5722;
+  color: $Orange;
 }
 
 .dark-orange-bg{
-	background-color: #e64a19;
+	background-color: $OrangeDark;
 }
 
 .dark_orange{
-	color: #e64a19;
+	color: $OrangeDark;
 }
 
 .white {
-  color: #ffffff;
+  color: $White;
+}
+
+.green{
+    color:$Green;
 }
 
 .navbar-default {
-    border-color: #ff7043;
+    border-color: $Orange;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
@@ -57,6 +74,18 @@
 
 .footer{
 	box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.yellow{
+    color: $Yellow;
+}
+
+.yellow-bg{
+    background-color: $Yellow;
+}
+
+.yellow-dark{
+    color: $YellowDark;
 }
 
 .bs-callout {
@@ -73,8 +102,52 @@
 
 	font-size:16px;
 	color:#212121;
-	font-family: 'Roboto Regular';
 }
-.bs-callout-deep-orange{
-    border-top-color: #ffeb3b;
+.bs-callout-yellow{
+    border-top-color: $Yellow;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.btn{
+    font-size: 16px;
+    border: 1px solid transparent;
+}
+
+.btn-yellow-hover:hover{
+    border: 1px solid transparent;
+    background-color: $YellowDark;
+    transition : background-color 0.2s ease-out 0s;
+    color: $White;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.field_with_errors{
+    color: $Alert;
+    padding:0;
+    margin:0;
+}
+
+.content-fund-description{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eee;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    margin: 20px 0;
+    padding: 20px;
+    font-size:16px;
+    color:#212121;
 }

@@ -1,0 +1,50 @@
+<div class="container roboto-regular" style="margin-top: 50px;">
+
+	<div class="bs-callout bs-callout-yellow row" style="text-size:16px;">
+
+		<h1 class="deep-orange text-center">Summary</h1>
+
+		<div class="row">
+			<div class="col-lg-2">
+				Donor :
+			</div>
+			<div class="col-lg-10">
+			 	<%= @fund.firstname %> <%= @fund.lastname %>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-2">
+				Email :
+			</div>
+			<div class="col-lg-10">
+			 	<%= @fund.email %>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-2">
+				Donation :
+			</div>
+			<div class="col-lg-10">
+			 	<%= @fund.donation_value %>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-2">
+				Comment to Nicolas :
+			</div>
+			<div class="col-lg-10">
+			 	<%= @fund.comment %>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-12">
+				<%= link_to 'Back to Home', root_path, class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %>
+			</div>
+		</div>
+
+	</div>
+</div>

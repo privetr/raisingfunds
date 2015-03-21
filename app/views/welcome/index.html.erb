@@ -3,13 +3,13 @@
 	<%= image_tag "home_banner.png", class: "img-home-banner" %>
 </div>
 
-<div class="container">
+<div class="container roboto-regular">
 
 	<h1 class="deep-orange">Welcome to Nicolas Privet Raising Funds' Website </h1>
-	<p>You will be able to follow its race to gain money for an association</p>
+	<p class="roboto-regular">You will be able to follow its race to gain money for an association</p>
 
 
-	<div class="bs-callout bs-callout-deep-orange row">
+	<div class="bs-callout bs-callout-yellow row">
 		<br>blabla
 		<br>blabla
 		<br>blabla
@@ -20,7 +20,7 @@
 
 	<h1 class="deep-orange">What is "La diagonale des fous" ? </h1>
 
-	<div class="bs-callout bs-callout-deep-orange row">
+	<div class="bs-callout bs-callout-yellow row">
 		<br>blabla
 		<br>blabla
 		<br>blabla
@@ -36,14 +36,86 @@
 </div>
 
 <div class="container">
+	<h1 class="deep-orange">Donations</h1>
 
-	<div class="bs-callout bs-callout-deep-orange row">
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
+	<div class="bs-callout bs-callout-yellow row">
+		<div class="row">
+			<div class="col-lg-12">
+				<%= link_to "Make a new donation's promise", new_fund_path, class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="deep-orange"> Donation sum : <%= @donation_sum %></h3>
+			</div>
+		</div>
+
+		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="deep-orange"> List of donations :</h3>
+				<% @funds.each do |fund| %>
+					<div class="row" style="margin:0px; padding:0px;">
+						<div class="col-lg-6 content-fund-description" style="margin:5px; padding:10px;">
+							<p> <span class="yellow-dark bold"><%= fund.firstname %> <%= fund.lastname %></span> : <%= fund.donation_value %> Dongs 
+								<span style="float: right;"> (<%= fund.created_at.strftime("%d %b %y") %>)</span> 
+							</p>
+							<p><i><%= fund.comment %></i></p>
+						</div>
+					</div>
+			  	<% end %>
+			</div>
+		</div>
 	</div>
+	
 
 </div>
+
+<script type="text/javascript">
+    $(function () {
+	    $('#container').highcharts({
+	        title: {
+	            text: 'Total possible gain for the assocation depending on Nicolas\'s performance',
+	            x: -20 //center
+	        },
+	        xAxis: {
+	        	title: {
+	                text: 'Distance (km)'
+	            },
+	            categories: ['10km', '20km', '30km', '40km', '50km', '60km',
+	                '70km', '80km', '90km', '100km', '110km', '120km',
+	                '130km', '140km', '150km', '160km', '170km',
+	                ]
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Donation Value'
+	            },
+	            plotLines: [{
+	                value: 0,
+	                width: 1,
+	                color: '#4caf50'
+	            }]
+	        },
+	        tooltip: {
+	            valueSuffix: ' Dongs'
+	        },
+	        legend: {
+	            layout: 'vertical',
+	            align: 'right',
+	            verticalAlign: 'middle',
+	            borderWidth: 0
+	        },
+	        series: [{
+	            name: 'Value',
+	            color: '#4caf50',
+	            data: [10 * <%= @donation_sum %>, 20 * <%= @donation_sum %>, 30 * <%= @donation_sum %>, 40 * <%= @donation_sum %>,
+	             50 * <%= @donation_sum %>, 60 * <%= @donation_sum %>, 70 * <%= @donation_sum %>, 80 * <%= @donation_sum %>,
+	              90 * <%= @donation_sum %>, 100 * <%= @donation_sum %>, 110 * <%= @donation_sum %>, 120 * <%= @donation_sum %>,
+	               130 * <%= @donation_sum %>, 140 * <%= @donation_sum %>, 150 * <%= @donation_sum %>,160 * <%= @donation_sum %>, 170 * <%= @donation_sum %>]
+	        }]
+	    });
+	});
+</script>
