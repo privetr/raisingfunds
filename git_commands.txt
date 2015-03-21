@@ -4,6 +4,7 @@ git config --global push.default matching
 git config --global alias.co checkout
 
 git init
+git add . // ignore .gitignore files
 git add -A
 git status
 git commit -m "Initialize repository"
