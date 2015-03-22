@@ -3,25 +3,28 @@
 
 	<div class="bs-callout bs-callout-yellow row">
 
-		<h1 class="deep-orange text-center">Make a new donation's promise by Kilometer ran by Nicolas </h1>
+		<h1 class="deep-orange text-center"> <%= t("new_title_donation") %> </h1>
 
 		<%= bootstrap_form_for(@fund) do |f| %>
 
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<%= f.text_field :firstname %>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<%= f.text_field :lastname %>
+				</div>
+				<div class="col-lg-4">
+					<%= f.email_field :email %>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-6">
-					<%= f.email_field :email %>
+				<div class="col-lg-4">
+					<%= f.select :devise, [["EURO €", "euro"], ["USD $", "usd"], ["DONG ₫", "dong"]], { label: "Choose the devise for donation" }, { class: "selectpicker" } %>
 				</div>
-				<div class="col-lg-6">
-					<%= f.number_field :donation_value %>
+				<div class="col-lg-4">
+					<%= f.number_field :donation_value, step:"0.01" %>
 				</div>
 			</div>
 

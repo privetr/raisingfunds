@@ -5,9 +5,8 @@
 
 <div class="container roboto-regular">
 
-	<h1 class="deep-orange">Welcome to Nicolas Privet Raising Funds' Website </h1>
+	<h1 class="deep-orange"> <%= t("index_welcome_nicolas_website") %> </h1>
 	<p class="roboto-regular">You will be able to follow its race to gain money for an association</p>
-
 
 	<div class="bs-callout bs-callout-yellow row">
 		<br>blabla
@@ -47,7 +46,8 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 class="deep-orange"> Donation sum : <%= @donation_sum %></h3>
+				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= number_to_human(@donation_sum_dong) %> (Dongs) </h3></p>
+				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= number_to_human(@donation_sum_euro) %> (EURO - USD) </h3></p>
 			</div>
 		</div>
 
@@ -59,7 +59,15 @@
 				<% @funds.each do |fund| %>
 					<div class="row" style="margin:0px; padding:0px;">
 						<div class="col-lg-6 content-fund-description" style="margin:5px; padding:10px;">
-							<p> <span class="yellow-dark bold"><%= fund.firstname %> <%= fund.lastname %></span> : <%= fund.donation_value %> Dongs 
+							<p> <span class="yellow-dark bold"><%= fund.firstname %> <%= fund.lastname %></span> : <%= fund.donation_value %>
+							<% if fund.devise == "euro" %>
+								Euros
+							<% elsif fund.devise == "usd" %>
+								USD
+							<% else fund.devise == "dong" %>
+								Dongs
+							<% end %> 
+							 per Km
 								<span style="float: right;"> (<%= fund.created_at.strftime("%d %b %y") %>)</span> 
 							</p>
 							<p><i><%= fund.comment %></i></p>
@@ -101,7 +109,7 @@
 	            }]
 	        },
 	        tooltip: {
-	            valueSuffix: ' Dongs'
+	            valueSuffix: ''
 	        },
 	        legend: {
 	            layout: 'vertical',
@@ -110,13 +118,33 @@
 	            borderWidth: 0
 	        },
 	        series: [{
-	            name: 'Value',
+	            name: 'Kdongs',
 	            color: '#4caf50',
-	            data: [10 * <%= @donation_sum %>, 20 * <%= @donation_sum %>, 30 * <%= @donation_sum %>, 40 * <%= @donation_sum %>,
-	             50 * <%= @donation_sum %>, 60 * <%= @donation_sum %>, 70 * <%= @donation_sum %>, 80 * <%= @donation_sum %>,
-	              90 * <%= @donation_sum %>, 100 * <%= @donation_sum %>, 110 * <%= @donation_sum %>, 120 * <%= @donation_sum %>,
-	               130 * <%= @donation_sum %>, 140 * <%= @donation_sum %>, 150 * <%= @donation_sum %>,160 * <%= @donation_sum %>, 170 * <%= @donation_sum %>]
-	        }]
+	            data: [<%= @donation_sum_dong_array[0] %> , <%= @donation_sum_dong_array[1] %>, 
+	            <%= @donation_sum_dong_array[2] %>, <%= @donation_sum_dong_array[3] %>,
+	             <%= @donation_sum_dong_array[4] %>, <%= @donation_sum_dong_array[5] %>, 
+	             <%= @donation_sum_dong_array[6] %>, <%= @donation_sum_dong_array[7] %>, 
+	             <%= @donation_sum_dong_array[8] %>, <%= @donation_sum_dong_array[9] %>, 
+	             <%= @donation_sum_dong_array[10] %>, <%= @donation_sum_dong_array[11] %>,
+	             <%= @donation_sum_dong_array[12] %>, <%= @donation_sum_dong_array[13] %>, 
+	             <%= @donation_sum_dong_array[14] %>, 
+	             <%= @donation_sum_dong_array[15] %>, <%= @donation_sum_dong_array[16] %>]
+	        },
+	        {
+	            name: 'EURO - USD',
+	            color: '#03a9f4',
+	            data: [<%= number_to_human(@donation_sum_euro_array[0]) %> , <%= number_to_human(@donation_sum_euro_array[1]) %>, 
+	            <%= number_to_human(@donation_sum_euro_array[2]) %>, <%= number_to_human(@donation_sum_euro_array[3]) %>,
+	             <%= number_to_human(@donation_sum_euro_array[4]) %>, <%= number_to_human(@donation_sum_euro_array[5]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[6]) %>, <%= number_to_human(@donation_sum_euro_array[7]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[8]) %>, <%= number_to_human(@donation_sum_euro_array[9]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[10]) %>, <%= number_to_human(@donation_sum_euro_array[11]) %>,
+	             <%= number_to_human(@donation_sum_euro_array[12]) %>, <%= number_to_human(@donation_sum_euro_array[13]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[14]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[15]) %>, <%= number_to_human(@donation_sum_euro_array[16]) %>]
+	        }
+
+	        ]
 	    });
 	});
 

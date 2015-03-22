@@ -22,4 +22,4 @@ postgres-# CREATE DATABASE namebase
 postgres-# GRANT ALL PRIVILEGES ON DATABASE namebase to nameuser
 postgres-# \q
 
-RAILS_ENV=production Rails s -p 1712 -o 0.0.0.0
+RAILS_ENV=production nohup rails s -p 1712 -b 0.0.0.0 > myout.log

@@ -50,6 +50,6 @@ class FundsController < ApplicationController
 	# PRIVATE methods
 	private
 		def fund_params
-		params.require(:fund).permit(:firstname, :lastname, :email, :donation_value, :comment)
+		params.require(:fund).permit(:firstname, :lastname, :email, :donation_value, :comment, :devise)
 		end
 end

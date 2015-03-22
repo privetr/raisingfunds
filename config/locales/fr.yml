@@ -19,10 +19,9 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+fr:
   # INDEX
-  index_welcome_nicolas_website: "Welcome to Nicolas Privet Raising Funds\' Website"
+  index_welcome_nicolas_website: "Bienvenue sur le site de collecte de fonds de Nicolas Privet"
 
   # NEW DONATION
-  new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"
- 
+  new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
