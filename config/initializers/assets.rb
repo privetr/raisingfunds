@@ -9,3 +9,5 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( exporting.js )
 Rails.application.config.assets.precompile += %w( highcharts.js )
+Rails.application.config.assets.precompile += %w( jquery.plugin.js )
+Rails.application.config.assets.precompile += %w( jquery.countdown.js )

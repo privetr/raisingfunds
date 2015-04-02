@@ -20,8 +20,38 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 fr:
+
+  # ALL PAGES
+  application_title_navbar: "Site de collecte de fonds de Nicolas Privet"
+  save: "Enregistrer"
+
   # INDEX
   index_welcome_nicolas_website: "Bienvenue sur le site de collecte de fonds de Nicolas Privet"
 
   # NEW DONATION
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
+  new_title_devise_donation: "Choisir la devise pour le don"
+
+
+  #ACTIVE RECORDS
+  activerecord:
+    errors:
+      models:
+        fund:
+          attributes:
+            email:
+              blank: "Erreur : L'email doit être obligatoirement renseigné."
+            firstname:
+              blank: "Erreur : Votre prénom doit être obligatoirement renseigné."
+            lastname:
+              blank: "Erreur : Vous devez renseigner votre nom."
+            donation_value:
+              blank: "Erreur : Votre don ne peut être nul."
+    attributes:
+      fund:
+        firstname: "Prénom"
+        lastname: "Nom"
+        donation_value: "Valeur du don"
+        comment: "Commentaire"
+
+

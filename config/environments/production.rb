@@ -34,7 +34,7 @@ Rails.application.configure do
   config.assets.digest = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
-  config.assets.precompile += ['exporting.js', 'highcharts.js']
+  config.assets.precompile += ['exporting.js', 'highcharts.js', 'jquery.plugin.js', 'jquery.countdown.js']
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache

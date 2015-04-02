@@ -21,10 +21,16 @@
 
 			<div class="row">
 				<div class="col-lg-4">
-					<%= f.select :devise, [["EURO €", "euro"], ["USD $", "usd"], ["DONG ₫", "dong"]], { label: "Choose the devise for donation" }, { class: "selectpicker" } %>
+					<%= f.select :devise, [["EURO €", "euro"], ["USD $", "usd"], ["DONG ₫", "dong"]], { label: t('new_title_devise_donation') }, { class: "selectpicker" } %>
 				</div>
 				<div class="col-lg-4">
 					<%= f.number_field :donation_value, step:"0.01" %>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<p id="text_explanation_total_gain_donation" style="font-style:italic"></p>
 				</div>
 			</div>
 
@@ -36,7 +42,7 @@
 
 			<div class="row">
 				<div class="col-lg-12">
-					<%= f.submit "Save", class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %>
+					<%= f.submit t('save'), class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %>
 				</div>
 			</div>
 
@@ -45,3 +51,17 @@
 
 	</div>
 </div>
+
+<script type="text/javascript">
+	$( "#fund_donation_value" ).change(function() {
+		var value = $( "#fund_donation_value" ).val();
+		value = value * 170;
+		var str = "";
+		<% if I18n.locale == :en %>
+			str = "If Nicolas finishes the race, your donation will correspond to " + value + " " + $("#fund_devise option:selected").text();
+		<% elsif I18n.locale == :fr %>
+			str = "Si Nicolas finit la course, votre don correspondra à " + value + " " + $("#fund_devise option:selected").text();
+		<% end %>
+		$( "#text_explanation_total_gain_donation" ).text( str );
+	});
+</script>

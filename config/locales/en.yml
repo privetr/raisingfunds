@@ -20,9 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+
+  # ALL PAGES
+  application_title_navbar: "Nicolas Privet's Raising Funds"
+
   # INDEX
   index_welcome_nicolas_website: "Welcome to Nicolas Privet Raising Funds\' Website"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"
+  new_title_devise_donation: "Choose the devise for donation"
  

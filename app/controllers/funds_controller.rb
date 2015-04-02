@@ -1,4 +1,5 @@
 class FundsController < ApplicationController
+	
 	# PUBLIC methods 
 	def index
 		@funds = Fund.all

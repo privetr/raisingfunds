@@ -8,6 +8,16 @@
 	<h1 class="deep-orange"> <%= t("index_welcome_nicolas_website") %> </h1>
 	<p class="roboto-regular">You will be able to follow its race to gain money for an association</p>
 
+	<div class="row">
+		<div class="row">
+			<div class=" col-lg-4 col-lg-push-4">
+				<div id="countdownContainer" style="height: 45px; background-color:white; border:none;"></div>
+			</div>
+			
+		</div>
+	</div>
+
+
 	<div class="bs-callout bs-callout-yellow row">
 		<br>blabla
 		<br>blabla
@@ -80,6 +90,12 @@
 	
 
 </div>
+
+<script type="text/javascript">
+	$('#countdownContainer').countdown({until: new Date(2015, 10 - 1, 22, 00, 00, 00, 000)});	
+	//new Date(year, month, day, hours, minutes, seconds, milliseconds) 
+</script>
+
 
 <script type="text/javascript">
 
