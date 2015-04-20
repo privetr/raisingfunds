@@ -78,7 +78,7 @@
 
 		<div class="row" style="margin-top:30px;">
 			<div class="col-lg-12">
-				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= number_to_human(@donation_sum_euro) %> (EURO - USD) </h3></p>
+				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= @donation_sum_euro %> (EURO - USD) </h3></p>
 			</div>
 		</div>
 
@@ -86,7 +86,7 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= number_to_human(@donation_sum_dong) %> (Dongs) </h3></p>
+				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= @donation_sum_dong %> (Dongs) </h3></p>
 			</div>
 		</div>
 
@@ -166,15 +166,15 @@
 	        {
 	            name: 'EURO - USD',
 	            color: '#03a9f4',
-	            data: [<%= number_to_human(@donation_sum_euro_array[0]) %> , <%= number_to_human(@donation_sum_euro_array[1]) %>, 
-	            <%= number_to_human(@donation_sum_euro_array[2]) %>, <%= number_to_human(@donation_sum_euro_array[3]) %>,
-	             <%= number_to_human(@donation_sum_euro_array[4]) %>, <%= number_to_human(@donation_sum_euro_array[5]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[6]) %>, <%= number_to_human(@donation_sum_euro_array[7]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[8]) %>, <%= number_to_human(@donation_sum_euro_array[9]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[10]) %>, <%= number_to_human(@donation_sum_euro_array[11]) %>,
-	             <%= number_to_human(@donation_sum_euro_array[12]) %>, <%= number_to_human(@donation_sum_euro_array[13]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[14]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[15]) %>, <%= number_to_human(@donation_sum_euro_array[16]) %>]
+	            data: [<%= @donation_sum_euro_array[0] %> , <%= @donation_sum_euro_array[1] %>, 
+	            <%= @donation_sum_euro_array[2] %>, <%= @donation_sum_euro_array[3] %>,
+	             <%= @donation_sum_euro_array[4] %>, <%= @donation_sum_euro_array[5] %>, 
+	             <%= @donation_sum_euro_array[6] %>, <%= @donation_sum_euro_array[7] %>, 
+	             <%= @donation_sum_euro_array[8] %>, <%= @donation_sum_euro_array[9] %>, 
+	             <%= @donation_sum_euro_array[10] %>, <%= @donation_sum_euro_array[11] %>,
+	             <%= @donation_sum_euro_array[12] %>, <%= @donation_sum_euro_array[13] %>, 
+	             <%= @donation_sum_euro_array[14] %>, 
+	             <%= @donation_sum_euro_array[15] %>, <%= @donation_sum_euro_array[16] %>]
 	        }
 
 	        ]
