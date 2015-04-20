@@ -11,6 +11,7 @@
 	<div class="row">
 		<div class="row">
 			<div class=" col-lg-4 col-lg-push-4">
+				<h3>Remaining time before the race :</h3>
 				<div id="countdownContainer" style="height: 45px; background-color:white; border:none;"></div>
 			</div>
 			
@@ -18,25 +19,42 @@
 	</div>
 
 
-	<div class="bs-callout bs-callout-yellow row">
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
+	<div class="row" style="margin-top:30px;">
+		<div class="col-lg-3 bs-callout bs-callout-orange">
+			<%= link_to url_diagonale_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
+				<%= t("diagonale_des_fous") %>
+			<% end %>
+		</div>
+		<div class="col-lg-3 col-lg-push-1 bs-callout bs-callout-orange">
+			<%= link_to url_nicolasprivet_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
+				Nicolas
+			<% end %>
+		</div>
+		<div class="col-lg-3 col-lg-push-2  bs-callout bs-callout-orange">
+			<%= link_to url_association_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
+				<%= t("association") %>
+			<% end %>
+		</div>
 	</div>
 
-	<h1 class="deep-orange">What is "La diagonale des fous" ? </h1>
-
-	<div class="bs-callout bs-callout-yellow row">
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
-		<br>blabla
+	<div class="row" style="margin-top:30px;">
+		<div class="col-lg-3 bs-callout bs-callout-orange">
+			<%= link_to url_sponsors_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
+				<%= t("my_sponsor") %>
+			<% end %>
+		</div>
+		<div class="col-lg-3 col-lg-push-1 bs-callout bs-callout-orange">
+			<%= link_to url_links_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
+				<%= t("links") %>
+			<% end %>
+		</div>
+		<div class="col-lg-3 col-lg-push-2  bs-callout bs-callout-orange">
+			<%= link_to url_contacts_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
+				<%= t("contacts") %>
+			<% end %>
+		</div>
 	</div>
+
 
 </div>
 
@@ -50,18 +68,29 @@
 	<div class="bs-callout bs-callout-yellow row">
 		<div class="row">
 			<div class="col-lg-12">
-				<%= link_to "Make a new donation's promise", new_fund_path, class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %>
+				
+				<%= link_to new_fund_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4' do %>
+				  <i class="glyphicon glyphicon-plus"></i> Make a new donation's promise
+				<% end %>
+
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" style="margin-top:30px;">
 			<div class="col-lg-12">
-				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= number_to_human(@donation_sum_dong) %> (Dongs) </h3></p>
 				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= number_to_human(@donation_sum_euro) %> (EURO - USD) </h3></p>
 			</div>
 		</div>
 
-		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<div id="container-us-eu" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= number_to_human(@donation_sum_dong) %> (Dongs) </h3></p>
+			</div>
+		</div>
+
+		<div id="container-vn" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 		<div class="row">
 			<div class="col-lg-12">
@@ -100,7 +129,59 @@
 <script type="text/javascript">
 
     $(function () {
-	    $('#container').highcharts({
+	    $('#container-us-eu').highcharts({
+	        title: {
+	            text: 'Total possible gain for the assocation depending on Nicolas\'s performance',
+	            x: -20 //center
+	        },
+	        xAxis: {
+	        	title: {
+	                text: 'Distance (km)'
+	            },
+	            categories: ['10km', '20km', '30km', '40km', '50km', '60km',
+	                '70km', '80km', '90km', '100km', '110km', '120km',
+	                '130km', '140km', '150km', '160km', '170km',
+	                ]
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Donation Value'
+	            },
+	            plotLines: [{
+	                value: 0,
+	                width: 1,
+	                color: '#4caf50'
+	            }]
+	        },
+	        tooltip: {
+	            valueSuffix: ''
+	        },
+	        legend: {
+	            layout: 'vertical',
+	            align: 'right',
+	            verticalAlign: 'middle',
+	            borderWidth: 0
+	        },
+	        series: [
+	        {
+	            name: 'EURO - USD',
+	            color: '#03a9f4',
+	            data: [<%= number_to_human(@donation_sum_euro_array[0]) %> , <%= number_to_human(@donation_sum_euro_array[1]) %>, 
+	            <%= number_to_human(@donation_sum_euro_array[2]) %>, <%= number_to_human(@donation_sum_euro_array[3]) %>,
+	             <%= number_to_human(@donation_sum_euro_array[4]) %>, <%= number_to_human(@donation_sum_euro_array[5]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[6]) %>, <%= number_to_human(@donation_sum_euro_array[7]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[8]) %>, <%= number_to_human(@donation_sum_euro_array[9]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[10]) %>, <%= number_to_human(@donation_sum_euro_array[11]) %>,
+	             <%= number_to_human(@donation_sum_euro_array[12]) %>, <%= number_to_human(@donation_sum_euro_array[13]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[14]) %>, 
+	             <%= number_to_human(@donation_sum_euro_array[15]) %>, <%= number_to_human(@donation_sum_euro_array[16]) %>]
+	        }
+
+	        ]
+	    });
+
+
+		$('#container-vn').highcharts({
 	        title: {
 	            text: 'Total possible gain for the assocation depending on Nicolas\'s performance',
 	            x: -20 //center
@@ -134,7 +215,7 @@
 	            borderWidth: 0
 	        },
 	        series: [{
-	            name: 'Kdongs',
+	            name: 'DONGS',
 	            color: '#4caf50',
 	            data: [<%= @donation_sum_dong_array[0] %> , <%= @donation_sum_dong_array[1] %>, 
 	            <%= @donation_sum_dong_array[2] %>, <%= @donation_sum_dong_array[3] %>,
@@ -146,22 +227,10 @@
 	             <%= @donation_sum_dong_array[14] %>, 
 	             <%= @donation_sum_dong_array[15] %>, <%= @donation_sum_dong_array[16] %>]
 	        },
-	        {
-	            name: 'EURO - USD',
-	            color: '#03a9f4',
-	            data: [<%= number_to_human(@donation_sum_euro_array[0]) %> , <%= number_to_human(@donation_sum_euro_array[1]) %>, 
-	            <%= number_to_human(@donation_sum_euro_array[2]) %>, <%= number_to_human(@donation_sum_euro_array[3]) %>,
-	             <%= number_to_human(@donation_sum_euro_array[4]) %>, <%= number_to_human(@donation_sum_euro_array[5]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[6]) %>, <%= number_to_human(@donation_sum_euro_array[7]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[8]) %>, <%= number_to_human(@donation_sum_euro_array[9]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[10]) %>, <%= number_to_human(@donation_sum_euro_array[11]) %>,
-	             <%= number_to_human(@donation_sum_euro_array[12]) %>, <%= number_to_human(@donation_sum_euro_array[13]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[14]) %>, 
-	             <%= number_to_human(@donation_sum_euro_array[15]) %>, <%= number_to_human(@donation_sum_euro_array[16]) %>]
-	        }
 
 	        ]
 	    });
+
 	});
 
 </script>

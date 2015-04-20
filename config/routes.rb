@@ -4,6 +4,14 @@ Rails.application.routes.draw do
   scope "(:locale)", :locale => /en|fr/ do
     root :to => 'welcome#index'
     get "page/index"
+
+    # static pages
+    get '/diagonale-des-fous' => 'welcome#diagonale', :as =>'url_diagonale'
+    get '/nicolas-privet' => 'welcome#nicolasprivet', :as =>'url_nicolasprivet'
+    get '/association' => 'welcome#association', :as =>'url_association'
+    get '/sponsors' => 'welcome#sponsors', :as =>'url_sponsors'
+    get '/links' => 'welcome#links', :as =>'url_links'
+    get '/contacts' => 'welcome#contacts', :as =>'url_contacts'
   end
 
   #get 'welcome/index'
@@ -23,6 +31,9 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :funds
+
+  
+  #match '/search' => 'search#search', :as => 'search'
 
   # Example resource route with options:
   #   resources :products do

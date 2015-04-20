@@ -22,7 +22,15 @@
 en:
 
   # ALL PAGES
-  application_title_navbar: "Nicolas Privet's Raising Funds"
+  application_title_navbar: "Nicolas Privet\'s Raising Funds"
+  save: "Save"
+
+  # STATIC PAGES
+  diagonale_des_fous: "La diagonale des fous"
+  association: "The Charity Organization"
+  my_sponsor: "Sponsorship"
+  links: "Links"
+  contacts: "Contacts"
 
   # INDEX
   index_welcome_nicolas_website: "Welcome to Nicolas Privet Raising Funds\' Website"

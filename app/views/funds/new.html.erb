@@ -42,7 +42,12 @@
 
 			<div class="row">
 				<div class="col-lg-12">
-					<%= f.submit t('save'), class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %>
+					<!--<%= f.submit t('save'), class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %> -->
+
+					<%= button_tag(type: 'submit', class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4") do %>
+						<i class="glyphicon glyphicon glyphicon-ok"></i> <%= t("save") %>
+					<% end %>
+
 				</div>
 			</div>
 

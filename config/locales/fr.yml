@@ -32,6 +32,13 @@ fr:
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
   new_title_devise_donation: "Choisir la devise pour le don"
 
+  # LINK TO STATIC PAGES
+  diagonale_des_fous: "La diagonale des fous"
+  association: "L\'association"
+  my_sponsor: "Mon sponsor"
+  links: "Liens"
+  contacts: "Contacts"
+
 
   #ACTIVE RECORDS
   activerecord:

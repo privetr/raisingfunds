@@ -27,17 +27,43 @@ class WelcomeController < ApplicationController
 		160 * @donation_sum_euro, 170 * @donation_sum_euro
   	]
 
-  	@donation_sum_dong_array = [10 * @donation_sum_dong / 1000,
-  		20 * @donation_sum_dong / 1000, 30 * @donation_sum_dong / 1000,
-		40 * @donation_sum_dong / 1000, 50 * @donation_sum_dong / 1000,
-		60 * @donation_sum_dong / 1000, 70 * @donation_sum_dong / 1000,
-		80 * @donation_sum_dong / 1000, 90 * @donation_sum_dong / 1000,
-		100 * @donation_sum_dong / 1000, 110 * @donation_sum_dong / 1000,
-		120 * @donation_sum_dong / 1000, 130 * @donation_sum_dong / 1000,
-		140 * @donation_sum_dong / 1000, 150 * @donation_sum_dong / 1000,
-		160 * @donation_sum_dong / 1000, 170 * @donation_sum_dong / 1000
+  	@donation_sum_dong_array = [10 * @donation_sum_dong,
+  		20 * @donation_sum_dong, 30 * @donation_sum_dong,
+		40 * @donation_sum_dong, 50 * @donation_sum_dong,
+		60 * @donation_sum_dong, 70 * @donation_sum_dong,
+		80 * @donation_sum_dong, 90 * @donation_sum_dong,
+		100 * @donation_sum_dong, 110 * @donation_sum_dong,
+		120 * @donation_sum_dong, 130 * @donation_sum_dong,
+		140 * @donation_sum_dong, 150 * @donation_sum_dong,
+		160 * @donation_sum_dong , 170 * @donation_sum_dong
   	]
 
   end
+
+  # STATIC PAGES
+  def sponsors
+
+  end
+
+  def diagonale
+
+  end
+
+  def nicolasprivet
+
+  end
+
+  def association
+
+  end
+
+  def links
+
+  end
+
+  def contacts
+
+  end
+
 
 end
