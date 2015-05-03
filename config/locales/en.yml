@@ -22,8 +22,12 @@
 en:
 
   # ALL PAGES
-  application_title_navbar: "Nicolas Privet\'s Raising Funds"
+  application_title_navbar: 'Running "Le grand raid" for a cause'
   save: "Save"
+  gallery: "Photo gallery"
+  read_more: "Read more"
+  name_enfants_dragon: "The children of the Dragon"
+  address: "Address"
 
   # STATIC PAGES
   diagonale_des_fous: "La diagonale des fous"
@@ -33,9 +37,19 @@ en:
   contacts: "Contacts"
 
   # INDEX
-  index_welcome_nicolas_website: "Welcome to Nicolas Privet Raising Funds\' Website"
+  index_welcome_nicolas_website: 'Welcome !'
+  introduction_title: "Introduction"
+  whatis_diagonale_title: 'What is "La diagonale des fous"'
+  whois_nicolas_title: "Who is Nicolas"
+  how_support_title: "How money will be raised ? How can you support the project ?"
+  whois_charity_title: 'Who is the Charity “Les enfants du Dragon”'
+  whoare_sponsors_title: "Who are the Sponsors"
+  contactus_title: "Contact us"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"
   new_title_devise_donation: "Choose the devise for donation"
+
+  # LINKS TO WEBSITES
+  link_diagonale: "http://www.grandraid-reunion.com/?lang=en"
  

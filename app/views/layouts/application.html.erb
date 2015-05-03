@@ -14,16 +14,16 @@
 
 <body>
 	<div class="header">
-		<nav id="header_navbar" class="navbar navbar-default navbar-fixed-top deep-orange-bg">
+		<nav id="header_navbar" class="navbar navbar-default navbar-fixed-top maincolor-bg">
 			<div class="container">
 				<div class="text-center col-xs-12">
-					<a href="http://www.grandraid-reunion.com/" target="_blank"><%= image_tag "logo_ddf.png", class: "col-xs-1 logo-ddf-home" %></a>
+					<!--<a href="http://www.grandraid-reunion.com/" target="_blank"><%= image_tag "logo_ddf.png", class: "col-xs-1 logo-ddf-home" %></a>-->
 
 					<%= link_to root_path, class: "white col-xs-1", style:"margin-top:20px" do %>
 					  <span class="glyphicon glyphicon-home white"></span>
 					<% end %>
 
-					<h4 id="website_url" class="white col-xs-4 col-xs-push-2 roboto-regular" style="padding-top:10px;"><%= t("application_title_navbar") %></h4>
+					<h4 id="website_url" class="secondarycolordark col-xs-4 col-xs-push-3 roboto-regular" style="padding-top:10px;"><b><%= t("application_title_navbar") %></b></h4>
 
 					<%= link_to_unless I18n.locale == :en, image_tag('en.svg', style:"height:20px; width:25px; margin-top:20px;"), locale: :en %>
 					<%= link_to_unless I18n.locale == :fr, image_tag('fr.svg', style:"height:20px; width:25px; margin-top:20px;"), locale: :fr %>
@@ -38,23 +38,20 @@
 		<%= yield %>
 	</div>
 
-	<div class="footer dark-orange-bg white" style="margin-top:100px;">
+	<div class="footer maincolor-bg white" style="margin-top:100px;">
 		<div class="container" style="padding-top: 15px;">
 			<div class="row" style="padding:10px;">
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-		 			<p>Contact me : <br> Nicolas Privet <br> nicolas.privet@freshstudio.vn</p>
+		 			<p>Contact me : <br> Nicolas Privet <br> Nicolas.privet@gmail.com</p>
 		 			<div class="row">
 		 				<a href="http://www.facebook.com/privet.nicolas?ref=ts&fref=ts"  id="icon_fb">
 		 					<%= image_tag "icon_fb.png", class: "col-lg-3 col-md-3 col-sm-4 col-xs-4" %>
-		 				</a>
-		 				<a href="http://www.freshstudio.vn/"  id="icon_freshstudio">
-		 					<%= image_tag "icon_freshstudio.png", class: "col-lg-4 col-md-3 col-sm-4 col-xs-4" %>
 		 				</a>
 		 			</div>
 		 		</div>
 				
 				<div class="col-lg-3 col-lg-push-6 col-md-2 col-md-push-1 col-sm-2 col-sm-push-1 col-xs-12">
-		 			<p>© 2015 Rémi PRIVET <br> All rights reserved</p>
+		 			<p>© 2015 Nicolas PRIVET <br> All rights reserved</p>
 		 		</div>
 		 	</div>
 		</div>

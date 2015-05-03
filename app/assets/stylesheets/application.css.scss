@@ -23,35 +23,51 @@
     src: url(Roboto-Regular.ttf) format("truetype");
 }
 
+$MainColor:#9e9e9e;
+$SecondaryColor:#3f51b5;
+$SecondaryColorDark: #1a237e;
+
 $Orange:#ff5722;
 $OrangeDark:#e64a19;
 $White:#ffffff;
 $Yellow:#ffeb3b;
 $YellowDark:#fdd835;
 $Green:#4caf50;
+$RedDark: #d50000;
 
 .roboto-regular{
     font-family: 'Roboto Regular';
 }
 
-.deep-orange-bg {
-  background-color: $Orange;
+.maincolor-bg {
+  background-color: $MainColor;
 }
 
-.deep-orange {
-  color: $Orange;
+.maincolor {
+  color: $MainColor;
 }
 
-.dark-orange-bg{
-	background-color: $OrangeDark;
+.secondarycolor-bg {
+  background-color: $SecondaryColor;
 }
 
-.dark_orange{
-	color: $OrangeDark;
+.secondarycolor {
+  color: $SecondaryColor;
+}
+
+.secondarycolordark-bg {
+  background-color: $SecondaryColorDark;
+}
+
+.secondarycolordark {
+  color: $SecondaryColorDark;
 }
 
 .white {
   color: $White;
+}
+.reddark {
+  color: $RedDark;
 }
 
 .green{
@@ -59,12 +75,13 @@ $Green:#4caf50;
 }
 
 .navbar-default {
-    border-color: $Orange;
+    border-color: $MainColor;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 .img-home-banner{
 	width:100%;
+    height:350px;
 }
 
 .logo-ddf-home{
@@ -73,18 +90,6 @@ $Green:#4caf50;
 
 .footer{
 	box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.26);
-}
-
-.yellow{
-    color: $Yellow;
-}
-
-.yellow-bg{
-    background-color: $Yellow;
-}
-
-.yellow-dark{
-    color: $YellowDark;
 }
 
 .bs-callout {
@@ -102,12 +107,9 @@ $Green:#4caf50;
 	font-size:16px;
 	color:#212121;
 }
-.bs-callout-yellow{
-    border-top-color: $Yellow;
-}
 
-.bs-callout-orange{
-    border-top-color: $Orange;
+.bs-callout-maincolor{
+    border-top-color: $MainColor;
 }
 
 .uppercase{
@@ -123,9 +125,9 @@ $Green:#4caf50;
     border: 1px solid transparent;
 }
 
-.btn-yellow-hover:hover{
+.btn-secondarycolor-hover:hover{
     border: 1px solid transparent;
-    background-color: $YellowDark;
+    background-color: $MainColor;
     transition : background-color 0.2s ease-out 0s;
     color: $White;
 }

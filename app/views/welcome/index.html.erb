@@ -1,12 +1,11 @@
 
 <div style="margin-top: 50px;">
-	<%= image_tag "home_banner.png", class: "img-home-banner" %>
+	<%= image_tag "new_banner.png", class: "img-home-banner" %>
 </div>
 
 <div class="container roboto-regular">
 
-	<h1 class="deep-orange"> <%= t("index_welcome_nicolas_website") %> </h1>
-	<p class="roboto-regular">You will be able to follow its race to gain money for an association</p>
+	<h1 class="secondarycolor"> <%= t("index_welcome_nicolas_website") %> </h1>
 
 	<div class="row">
 		<div class="row">
@@ -14,63 +13,156 @@
 				<h3>Remaining time before the race :</h3>
 				<div id="countdownContainer" style="height: 45px; background-color:white; border:none;"></div>
 			</div>
-			
 		</div>
 	</div>
 
-
-	<div class="row" style="margin-top:30px;">
-		<div class="col-lg-3 bs-callout bs-callout-orange">
-			<%= link_to url_diagonale_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
-				<%= t("diagonale_des_fous") %>
-			<% end %>
+	<!-- Introduction -->
+	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("introduction_title") %></h1>
 		</div>
-		<div class="col-lg-3 col-lg-push-1 bs-callout bs-callout-orange">
-			<%= link_to url_nicolasprivet_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
-				Nicolas
-			<% end %>
-		</div>
-		<div class="col-lg-3 col-lg-push-2  bs-callout bs-callout-orange">
-			<%= link_to url_association_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
-				<%= t("association") %>
-			<% end %>
+		<div class="col-lg-12">
+			TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION<br>
+			TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION<br>
+			TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION<br>
 		</div>
 	</div>
 
-	<div class="row" style="margin-top:30px;">
-		<div class="col-lg-3 bs-callout bs-callout-orange">
-			<%= link_to url_sponsors_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
-				<%= t("my_sponsor") %>
-			<% end %>
+	<!-- What is la diagonale des fous -->
+	<div class="bs-callout bs-callout-secondarycolor row"  style="margin-top:20px;">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whatis_diagonale_title") %> ???</h1>
 		</div>
-		<div class="col-lg-3 col-lg-push-1 bs-callout bs-callout-orange">
-			<%= link_to url_links_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
-				<%= t("links") %>
-			<% end %>
-		</div>
-		<div class="col-lg-3 col-lg-push-2  bs-callout bs-callout-orange">
-			<%= link_to url_contacts_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-12' do %>
-				<%= t("contacts") %>
-			<% end %>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-6">
+					<%= link_to url_diagonale_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("read_more") %> <i class="glyphicon glyphicon-chevron-right"></i> 
+					<% end %>
+				</div>
+				<div class="col-lg-6">
+					<%= link_to root_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("gallery") %> <i class="glyphicon glyphicon-chevron-right"></i> 
+					<% end %>
+				</div>	
+			</div>
 		</div>
 	</div>
 
+	<!-- Who is Nicolas -->
+	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whois_nicolas_title") %> ???</h1>
+		</div>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-12">
+					TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS<br>
+					TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS<br>
+					TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS<br>
+				</div>
+			</div>
+			<div class="row" style="margin-top:20px;">
+				<div class="col-lg-6">
+					<%= link_to url_nicolasprivet_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("read_more") %> <i class="glyphicon glyphicon-chevron-right"></i>
+					<% end %>
+				</div>
+				<div class="col-lg-6">
+					<%= link_to url_gallerynicolasprivet_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("gallery") %> <i class="glyphicon glyphicon-chevron-right"></i> 
+					<% end %>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<!-- How money raised, how to support -->
+	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("how_support_title") %></h1>
+		</div>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-6">
+					<%= link_to root_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("read_more") %> <i class="glyphicon glyphicon-chevron-right"></i>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Charity Enfants du dragon -->
+	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whois_charity_title") %></h1>
+		</div>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-6">
+					<%= link_to url_association_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("read_more") %> <i class="glyphicon glyphicon-chevron-right"></i>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sponsors -->
+	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whoare_sponsors_title") %> ? </h1>
+		</div>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-6">
+					<%= link_to url_sponsors_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("read_more") %> <i class="glyphicon glyphicon-chevron-right"></i>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contacts -->
+	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("contactus_title") %></h1>
+		</div>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-6">
+					<%= link_to url_contacts_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
+						<%= t("read_more") %> <i class="glyphicon glyphicon-chevron-right"></i>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>
 
-<div>
-	<a href="http://www.grandraid-reunion.com/" target="_blank"><%= image_tag "track_ddf.png", class: "img-home-banner" %></a>
-</div>
 
 <div class="container">
-	<h1 class="deep-orange">Donations</h1>
+	<div class="row" style="margin-bottom:100px;" id="ancre_donations">
+		<div class="col-lg-12">
+			<div class="col-lg-2 col-lg-push-5">
+				<h1><a href="#id_div_donations"><i class="glyphicon glyphicon-chevron-down secondarycolor"></i></a></h1>
+			</div>
+		</div>
+	</div>
 
-	<div class="bs-callout bs-callout-yellow row">
+	<div class="bs-callout bs-callout-secondarycolor row" id="id_div_donations">
 		<div class="row">
 			<div class="col-lg-12">
+				<h1 class="secondarycolor">Donations</h1>
+			</div>
+
+			<div class="col-lg-12">
 				
-				<%= link_to new_fund_path, class: 'bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4' do %>
-				  <i class="glyphicon glyphicon-plus"></i> Make a new donation's promise
+				<%= link_to new_fund_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-6 col-lg-push-3' do %>
+				  <h3><i class="glyphicon glyphicon-plus"></i> Make a new donation's promise</h3>
 				<% end %>
 
 			</div>
@@ -78,7 +170,7 @@
 
 		<div class="row" style="margin-top:30px;">
 			<div class="col-lg-12">
-				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= @donation_sum_euro %> (EURO - USD) </h3></p>
+				<p><h3 class="secondarycolor"> Donation sum per kilometer : <%= number_with_precision(@donation_sum_euro, precision: 2) %> (1 EURO = 1 USD) </h3></p>
 			</div>
 		</div>
 
@@ -86,7 +178,7 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<p><h3 class="deep-orange"> Donation sum per kilometer : <%= @donation_sum_dong %> (Dongs) </h3></p>
+				<p><h3 class="secondarycolor"> Donation sum per kilometer : <%= number_with_precision(@donation_sum_dong, precision: 0) %> (Dongs) </h3></p>
 			</div>
 		</div>
 
@@ -94,11 +186,12 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 class="deep-orange"> List of donations :</h3>
+				<h3 class="secondarycolor"> Has made a donation :</h3>
 				<% @funds.each do |fund| %>
 					<div class="row" style="margin:0px; padding:0px;">
 						<div class="col-lg-6 content-fund-description" style="margin:5px; padding:10px;">
-							<p> <span class="yellow-dark bold"><%= fund.firstname %> <%= fund.lastname %></span> : <%= fund.donation_value %>
+							<p> <span class="secondarycolor bold"><%= fund.firstname %> <%= fund.lastname %></span> : 
+							<!--<%= fund.donation_value %>
 							<% if fund.devise == "euro" %>
 								Euros
 							<% elsif fund.devise == "usd" %>
@@ -106,7 +199,7 @@
 							<% else fund.devise == "dong" %>
 								Dongs
 							<% end %> 
-							 per Km
+							 per Km-->
 								<span style="float: right;"> (<%= fund.created_at.strftime("%d %b %y") %>)</span> 
 							</p>
 							<p><i><%= fund.comment %></i></p>
@@ -125,6 +218,20 @@
 	//new Date(year, month, day, hours, minutes, seconds, milliseconds) 
 </script>
 
+<script type="text/javascript">
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+</script>
 
 <script type="text/javascript">
 
@@ -140,7 +247,7 @@
 	            },
 	            categories: ['10km', '20km', '30km', '40km', '50km', '60km',
 	                '70km', '80km', '90km', '100km', '110km', '120km',
-	                '130km', '140km', '150km', '160km', '170km',
+	                '130km', '140km', '150km', '160km', '163km',
 	                ]
 	        },
 	        yAxis: {
@@ -166,15 +273,23 @@
 	        {
 	            name: 'EURO - USD',
 	            color: '#03a9f4',
-	            data: [<%= @donation_sum_euro_array[0] %> , <%= @donation_sum_euro_array[1] %>, 
-	            <%= @donation_sum_euro_array[2] %>, <%= @donation_sum_euro_array[3] %>,
-	             <%= @donation_sum_euro_array[4] %>, <%= @donation_sum_euro_array[5] %>, 
-	             <%= @donation_sum_euro_array[6] %>, <%= @donation_sum_euro_array[7] %>, 
-	             <%= @donation_sum_euro_array[8] %>, <%= @donation_sum_euro_array[9] %>, 
-	             <%= @donation_sum_euro_array[10] %>, <%= @donation_sum_euro_array[11] %>,
-	             <%= @donation_sum_euro_array[12] %>, <%= @donation_sum_euro_array[13] %>, 
-	             <%= @donation_sum_euro_array[14] %>, 
-	             <%= @donation_sum_euro_array[15] %>, <%= @donation_sum_euro_array[16] %>]
+	            data: [<%= number_with_precision(@donation_sum_euro_array[0], precision: 2) %> , 
+	            <%= number_with_precision(@donation_sum_euro_array[1], precision: 2) %>, 
+	            <%= number_with_precision(@donation_sum_euro_array[2], precision: 2) %>, 
+	            <%= number_with_precision(@donation_sum_euro_array[3], precision: 2) %>,
+	             <%= number_with_precision(@donation_sum_euro_array[4], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[5], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[6], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[7], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[8], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[9], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[10], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[11], precision: 2) %>,
+	             <%= number_with_precision(@donation_sum_euro_array[12], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[13], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[14], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[15], precision: 2) %>, 
+	             <%= number_with_precision(@donation_sum_euro_array[16], precision: 2) %>]
 	        }
 
 	        ]
@@ -192,7 +307,7 @@
 	            },
 	            categories: ['10km', '20km', '30km', '40km', '50km', '60km',
 	                '70km', '80km', '90km', '100km', '110km', '120km',
-	                '130km', '140km', '150km', '160km', '170km',
+	                '130km', '140km', '150km', '160km', '163km',
 	                ]
 	        },
 	        yAxis: {
@@ -217,15 +332,23 @@
 	        series: [{
 	            name: 'DONGS',
 	            color: '#4caf50',
-	            data: [<%= @donation_sum_dong_array[0] %> , <%= @donation_sum_dong_array[1] %>, 
-	            <%= @donation_sum_dong_array[2] %>, <%= @donation_sum_dong_array[3] %>,
-	             <%= @donation_sum_dong_array[4] %>, <%= @donation_sum_dong_array[5] %>, 
-	             <%= @donation_sum_dong_array[6] %>, <%= @donation_sum_dong_array[7] %>, 
-	             <%= @donation_sum_dong_array[8] %>, <%= @donation_sum_dong_array[9] %>, 
-	             <%= @donation_sum_dong_array[10] %>, <%= @donation_sum_dong_array[11] %>,
-	             <%= @donation_sum_dong_array[12] %>, <%= @donation_sum_dong_array[13] %>, 
-	             <%= @donation_sum_dong_array[14] %>, 
-	             <%= @donation_sum_dong_array[15] %>, <%= @donation_sum_dong_array[16] %>]
+	            data: [<%= number_with_precision(@donation_sum_dong_array[0], precision: 0) %> , 
+	            <%= number_with_precision(@donation_sum_dong_array[1], precision: 0) %>, 
+	            <%= number_with_precision(@donation_sum_dong_array[2], precision: 0) %>, 
+	            <%= number_with_precision(@donation_sum_dong_array[3], precision: 0) %>,
+	             <%= number_with_precision(@donation_sum_dong_array[4], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[5], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[6], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[7], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[8], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[9], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[10], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[11], precision: 0) %>,
+	             <%= number_with_precision(@donation_sum_dong_array[12], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[13], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[14], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[15], precision: 0) %>, 
+	             <%= number_with_precision(@donation_sum_dong_array[16], precision: 0) %>]
 	        },
 
 	        ]

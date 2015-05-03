@@ -1,9 +1,9 @@
 
 <div class="container roboto-regular" style="margin-top: 50px;">
 
-	<div class="bs-callout bs-callout-yellow row">
+	<div class="bs-callout bs-callout-secondarycolor row">
 
-		<h1 class="deep-orange text-center"> <%= t("new_title_donation") %> </h1>
+		<h1 class="secondarycolor text-center"> <%= t("new_title_donation") %> </h1>
 
 		<%= bootstrap_form_for(@fund) do |f| %>
 
@@ -42,9 +42,9 @@
 
 			<div class="row">
 				<div class="col-lg-12">
-					<!--<%= f.submit t('save'), class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4" %> -->
+					<!--<%= f.submit t('save'), class: "bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-4 col-lg-push-4" %> -->
 
-					<%= button_tag(type: 'submit', class: "bold btn btn-default yellow-bg white uppercase btn-yellow-hover col-lg-4 col-lg-push-4") do %>
+					<%= button_tag(type: 'submit', class: "bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-4 col-lg-push-4") do %>
 						<i class="glyphicon glyphicon glyphicon-ok"></i> <%= t("save") %>
 					<% end %>
 
@@ -60,7 +60,7 @@
 <script type="text/javascript">
 	$( "#fund_donation_value" ).change(function() {
 		var value = $( "#fund_donation_value" ).val();
-		value = value * 170;
+		value = value * 163;
 		var str = "";
 		<% if I18n.locale == :en %>
 			str = "If Nicolas finishes the race, your donation will correspond to " + value + " " + $("#fund_devise option:selected").text();

@@ -22,11 +22,22 @@
 fr:
 
   # ALL PAGES
-  application_title_navbar: "Site de collecte de fonds de Nicolas Privet"
+  application_title_navbar: "Running for a Cause"
   save: "Enregistrer"
+  gallery: "Gallerie de photos"
+  read_more: "Voir plus"
+  name_enfants_dragon: "Les enfants du Dragon"
+  address: "Adresse"
 
   # INDEX
-  index_welcome_nicolas_website: "Bienvenue sur le site de collecte de fonds de Nicolas Privet"
+  index_welcome_nicolas_website: "Bienvenue !"
+  introduction_title: "Introduction"
+  whatis_diagonale_title: "Qu'est-ce que 'La diagonale des fous'"
+  whois_nicolas_title: "Qui est Nicolas"
+  how_support_title: "Comment l'argent va-t-elle êtr récoltée ? Comment pouvez-vous participer ?"
+  whois_charity_title: "L'association 'Les enfants du Dragon'"
+  whoare_sponsors_title: "Qui sont les sponsors"
+  contactus_title: "Contactez-nous"
 
   # NEW DONATION
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
@@ -38,6 +49,9 @@ fr:
   my_sponsor: "Mon sponsor"
   links: "Liens"
   contacts: "Contacts"
+
+  # LINKS TO WEBSITES
+  link_diagonale: "http://www.grandraid-reunion.com"
 
 
   #ACTIVE RECORDS

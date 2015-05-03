@@ -24,7 +24,7 @@ class WelcomeController < ApplicationController
 		100 * @donation_sum_euro, 110 * @donation_sum_euro,
 		120 * @donation_sum_euro, 130 * @donation_sum_euro,
 		140 * @donation_sum_euro, 150 * @donation_sum_euro,
-		160 * @donation_sum_euro, 170 * @donation_sum_euro
+		160 * @donation_sum_euro, 163 * @donation_sum_euro
   	]
 
   	@donation_sum_dong_array = [10 * @donation_sum_dong,
@@ -35,8 +35,10 @@ class WelcomeController < ApplicationController
 		100 * @donation_sum_dong, 110 * @donation_sum_dong,
 		120 * @donation_sum_dong, 130 * @donation_sum_dong,
 		140 * @donation_sum_dong, 150 * @donation_sum_dong,
-		160 * @donation_sum_dong , 170 * @donation_sum_dong
+		160 * @donation_sum_dong , 163 * @donation_sum_dong
   	]
+
+    
 
   end
 
@@ -62,6 +64,10 @@ class WelcomeController < ApplicationController
   end
 
   def contacts
+
+  end
+
+  def gallerynicolasprivet
 
   end
 
