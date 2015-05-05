@@ -38,6 +38,7 @@ class WelcomeController < ApplicationController
 		160 * @donation_sum_dong , 163 * @donation_sum_dong
   	]
 
+    @funds_display = Fund.order(created_at: :desc).take(5)
     
 
   end
@@ -69,6 +70,10 @@ class WelcomeController < ApplicationController
 
   def gallerynicolasprivet
 
+  end
+
+  def adminsitenico
+    @funds = Fund.all   
   end
 
 

@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get '/sponsors' => 'welcome#sponsors', :as =>'url_sponsors'
     get '/links' => 'welcome#links', :as =>'url_links'
     get '/contacts' => 'welcome#contacts', :as =>'url_contacts'
+    get '/admin_site_nico' => 'welcome#adminsitenico', :as =>'url_adminsitenico'
   end
 
   #get 'welcome/index'

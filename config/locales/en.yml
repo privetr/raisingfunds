@@ -45,6 +45,9 @@ en:
   whois_charity_title: 'Who is the Charity “Les enfants du Dragon”'
   whoare_sponsors_title: "Who are the Sponsors"
   contactus_title: "Contact us"
+  has_made_donation: "Last donations"
+  donation_per_km: "Donation sum per kilometer"
+  make_new_donation: "Make a new donation's promise"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"

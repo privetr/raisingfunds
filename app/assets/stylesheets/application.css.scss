@@ -156,3 +156,14 @@ $RedDark: #d50000;
     font-size:16px;
     color:#212121;
 }
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}

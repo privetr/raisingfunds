@@ -45,7 +45,7 @@ class FundsController < ApplicationController
 		@fund = Fund.find(params[:id])
 		@fund.destroy
 
-		redirect_to funds_path
+		redirect_to url_adminsitenico_path
 	end
 
 	# PRIVATE methods

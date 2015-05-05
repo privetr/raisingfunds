@@ -34,10 +34,13 @@ fr:
   introduction_title: "Introduction"
   whatis_diagonale_title: "Qu'est-ce que 'La diagonale des fous'"
   whois_nicolas_title: "Qui est Nicolas"
-  how_support_title: "Comment l'argent va-t-elle êtr récoltée ? Comment pouvez-vous participer ?"
+  how_support_title: "Comment l'argent va-t-elle être récoltée ? Comment pouvez-vous participer ?"
   whois_charity_title: "L'association 'Les enfants du Dragon'"
   whoare_sponsors_title: "Qui sont les sponsors"
   contactus_title: "Contactez-nous"
+  has_made_donation: "Dernières donations"
+  donation_per_km: "Total des donations par kilomètre"
+  make_new_donation: "Faire une promesse de dons"
 
   # NEW DONATION
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"

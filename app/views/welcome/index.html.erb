@@ -162,7 +162,7 @@
 			<div class="col-lg-12">
 				
 				<%= link_to new_fund_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-6 col-lg-push-3' do %>
-				  <h3><i class="glyphicon glyphicon-plus"></i> Make a new donation's promise</h3>
+				  <h3><i class="glyphicon glyphicon-plus"></i> <%= t("make_new_donation") %> </h3>
 				<% end %>
 
 			</div>
@@ -170,7 +170,7 @@
 
 		<div class="row" style="margin-top:30px;">
 			<div class="col-lg-12">
-				<p><h3 class="secondarycolor"> Donation sum per kilometer : <%= number_with_precision(@donation_sum_euro, precision: 2) %> (1 EURO = 1 USD) </h3></p>
+				<p><h3 class="secondarycolor"> <%= t("donation_per_km") %> : <%= number_with_precision(@donation_sum_euro, precision: 2) %> (1 EURO = 1 USD) </h3></p>
 			</div>
 		</div>
 
@@ -178,7 +178,7 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<p><h3 class="secondarycolor"> Donation sum per kilometer : <%= number_with_precision(@donation_sum_dong, precision: 0) %> (Dongs) </h3></p>
+				<p><h3 class="secondarycolor"> <%= t("donation_per_km") %> : <%= number_with_precision(@donation_sum_dong, precision: 0) %> (Dongs) </h3></p>
 			</div>
 		</div>
 
@@ -186,8 +186,8 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h3 class="secondarycolor"> Has made a donation :</h3>
-				<% @funds.each do |fund| %>
+				<h3 class="secondarycolor"><%= t("has_made_donation") %> : </h3>
+				<% @funds_display.each do |fund| %>
 					<div class="row" style="margin:0px; padding:0px;">
 						<div class="col-lg-6 content-fund-description" style="margin:5px; padding:10px;">
 							<p> <span class="secondarycolor bold"><%= fund.firstname %> <%= fund.lastname %></span> : 

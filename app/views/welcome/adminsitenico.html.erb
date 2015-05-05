@@ -1,0 +1,32 @@
+<div class="container roboto-regular" style="margin-top: 50px;">
+	<div class="bs-callout bs-callout-yellow row">
+		<h2>List of donations</h2>
+		<% @funds.each do |fund| %>
+			<div class="row" style="margin:0px; padding:0px;">
+				<div class="col-lg-12 content-fund-description" style="margin:5px; padding:10px;">
+					<p> <span class="secondarycolor bold"><%= fund.firstname %> <%= fund.lastname %></span> : 
+					<!--<%= fund.donation_value %>
+					<% if fund.devise == "euro" %>
+						Euros
+					<% elsif fund.devise == "usd" %>
+						USD
+					<% else fund.devise == "dong" %>
+						Dongs
+					<% end %> 
+					 per Km-->
+						<span style="float: right;"> (<%= fund.created_at.strftime("%d %b %y") %>)</span> 
+					</p>
+					<p><i><%= fund.comment %></i></p>
+
+					<p>
+					    <%= link_to fund_path(fund), method: :delete, data: { confirm: 'Are you sure?' }, 
+					    	class: 'bold btn btn-danger white uppercase' do %>
+						  <i class="glyphicon glyphicon-delete"></i> Delete Donation
+						<% end %>
+					</p>
+				</div>
+			</div>
+	  	<% end %>
+
+	</div>
+</div>
