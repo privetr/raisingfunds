@@ -5,8 +5,6 @@
 
 <div class="container roboto-regular">
 
-	<h1 class="secondarycolor"> <%= t("index_welcome_nicolas_website") %> </h1>
-
 	<div class="row">
 		<div class="row">
 			<div class=" col-lg-4 col-lg-push-4">
@@ -28,10 +26,18 @@
 		</div>
 	</div>
 
-	<!-- What is la diagonale des fous -->
-	<div class="bs-callout bs-callout-secondarycolor row"  style="margin-top:20px;">
+	<div class="row" style="margin-bottom:100px;" id="ancre_whatis_diagonale">
 		<div class="col-lg-12">
-			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whatis_diagonale_title") %> ???</h1>
+			<div class="col-lg-2 col-lg-push-5">
+				<h1><a href="#id_div_whatis_diagonale"><i class="glyphicon glyphicon-chevron-down secondarycolor"></i></a></h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- What is la diagonale des fous -->
+	<div class="bs-callout bs-callout-secondarycolor row"  style="margin-top:20px;" id="id_div_whatis_diagonale">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whatis_diagonale_title") %> ?</h1>
 		</div>
 		<div class="col-lg-12">
 			<div class="row">
@@ -52,9 +58,12 @@
 	<!-- Who is Nicolas -->
 	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
 		<div class="col-lg-12">
-			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whois_nicolas_title") %> ???</h1>
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whois_nicolas_title") %> ?</h1>
 		</div>
 		<div class="col-lg-12">
+			<%= image_tag "home_banner.png", class: "col-lg-10 col-lg-push-1 img-responsive" %>
+		</div>
+		<div class="col-lg-12" style="padding-top:20px;">
 			<div class="row">
 				<div class="col-lg-12">
 					TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS<br>

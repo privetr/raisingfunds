@@ -73,7 +73,7 @@ class WelcomeController < ApplicationController
   end
 
   def adminsitenico
-    @funds = Fund.all   
+    @funds = Fund.order(created_at: :desc).all   
   end
 
 
