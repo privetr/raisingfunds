@@ -32,22 +32,23 @@ en:
   # STATIC PAGES
   diagonale_des_fous: "La diagonale des fous"
   association: "The Charity Organization"
-  my_sponsor: "Sponsorship"
+  my_sponsor: "Sponsorships"
   links: "Links"
   contacts: "Contacts"
 
   # INDEX
   index_welcome_nicolas_website: 'Welcome !'
   introduction_title: "Introduction"
-  whatis_diagonale_title: 'What is "La diagonale des fous"'
-  whois_nicolas_title: "Who is Nicolas"
-  how_support_title: "How money will be raised ? How can you support the project ?"
-  whois_charity_title: 'Who is the Charity “Les enfants du Dragon”'
-  whoare_sponsors_title: "Who are the Sponsors"
-  contactus_title: "Contact us"
+  whatis_diagonale_title: "La Diagonale des Fous - The Madmen's Diagonal"
+  whois_nicolas_title: "Nicolas"
+  how_support_title: "To read before making a donation"
+  whois_charity_title: 'The selected Charity: "Les enfants du dragon"'
+  whoare_sponsors_title: "My sponsors"
+  contactus_title: "Contact me"
   has_made_donation: "Last donations"
   donation_per_km: "Donation sum per kilometer"
   make_new_donation: "Make a new donation's promise"
+  timer_remaining_time: "TIME TO THE RACE"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"

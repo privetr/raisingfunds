@@ -4,7 +4,7 @@
 		<% @funds.each do |fund| %>
 			<div class="row" style="margin:0px; padding:0px;">
 				<div class="col-lg-12 content-fund-description" style="margin:5px; padding:10px;">
-					<p> <span class="secondarycolor bold"><%= fund.firstname %> <%= fund.lastname %></span> : 
+					<p> <span class="secondarycolor bold"><%= fund.firstname %> <%= fund.lastname %> (<%= fund.email %>)</span>  
 					<!--<%= fund.donation_value %>
 					<% if fund.devise == "euro" %>
 						Euros
@@ -17,6 +17,8 @@
 						<span style="float: right;"> (<%= fund.created_at.strftime("%d %b %y") %>)</span> 
 					</p>
 					<p><i><%= fund.comment %></i></p>
+
+					<p>Donation per km : <b><%= fund.donation_value %> <%= fund.devise %></b> (for 163km = <%= 163 * fund.donation_value %> <%= fund.devise %> )</p>
 
 					<p>
 					    <%= link_to fund_path(fund), method: :delete, data: { confirm: 'Are you sure?' }, 

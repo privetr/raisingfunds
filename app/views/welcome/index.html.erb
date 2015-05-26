@@ -7,8 +7,10 @@
 
 	<div class="row">
 		<div class="row">
+			<div class="col-lg-12" style="padding-top:20px;">
+				<center><h3 style="text-transform: uppercase;" class="timer-title secondarycolor"><%= t("timer_remaining_time") %> :</h3></center>
+			</div>
 			<div class=" col-lg-4 col-lg-push-4">
-				<h3>Remaining time before the race :</h3>
 				<div id="countdownContainer" style="height: 45px; background-color:white; border:none;"></div>
 			</div>
 		</div>
@@ -20,9 +22,23 @@
 			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("introduction_title") %></h1>
 		</div>
 		<div class="col-lg-12">
-			TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION<br>
-			TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION<br>
-			TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION TEXT INTRODUCTION<br>
+			<p>Welcome!!</p>
+
+			<p>Thank you for visiting this page!<br>
+			My objective here is to raise fund in a ludic way for a charity association “Les Enfants du Dragon” ; which is doing great things in Vietnam to support kids and their families in need. You can learn more about the association in the dedicated part of this website and directly on their website.</p>
+
+			<p>To achieve this, I will run one of the top 10 most difficult trail race in the world, “La diagonale des fous” starting on the 22nd of October 2015. The race is a single stage of 163km with 9996m elevation, and will take place in the beautiful tropical Island “La Reunion”. You can learn more about the race in the dedicated part of this website and directly on the official website.</p>
+
+			<p>You are invited to support the project by making a donation promise here below, which will be depending on how far I make it during the race. (of course to the end!!). 100% of the donation amount will be given to the association.</p>
+
+			<p>Please visit the sections below to learn more about the project, and hopefully, make a donation for the association. There is no small donation, each USD, EURO, and VND counts!!!</p>
+
+			<p>Last, on top of donating to the association, if you or your entity is interested in sponsoring me for the race, it is of course great. In this case, please contact me directly.</p>
+
+			<p>If anything is unclear to you, please contact me directly at Nicolas.privet@gmail.com, I will reply asap.</p>
+
+			<p class="secondarycolor"><b>Enjoy the visit!</b></p>
+
 		</div>
 	</div>
 
@@ -37,9 +53,9 @@
 	<!-- What is la diagonale des fous -->
 	<div class="bs-callout bs-callout-secondarycolor row"  style="margin-top:20px;" id="id_div_whatis_diagonale">
 		<div class="col-lg-12">
-			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whatis_diagonale_title") %> ?</h1>
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whatis_diagonale_title") %></h1>
 		</div>
-		<div class="col-lg-12">
+		<div class="col-lg-12" style="margin-top:20px;">
 			<div class="row">
 				<div class="col-lg-6">
 					<%= link_to url_diagonale_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
@@ -58,19 +74,9 @@
 	<!-- Who is Nicolas -->
 	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
 		<div class="col-lg-12">
-			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whois_nicolas_title") %> ?</h1>
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whois_nicolas_title") %> </h1>
 		</div>
 		<div class="col-lg-12">
-			<%= image_tag "home_banner.png", class: "col-lg-10 col-lg-push-1 img-responsive" %>
-		</div>
-		<div class="col-lg-12" style="padding-top:20px;">
-			<div class="row">
-				<div class="col-lg-12">
-					TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS<br>
-					TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS<br>
-					TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS TEXT NICOLAS<br>
-				</div>
-			</div>
 			<div class="row" style="margin-top:20px;">
 				<div class="col-lg-6">
 					<%= link_to url_nicolasprivet_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
@@ -91,7 +97,7 @@
 		<div class="col-lg-12">
 			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("how_support_title") %></h1>
 		</div>
-		<div class="col-lg-12">
+		<div class="col-lg-12" style="margin-top:20px;">
 			<div class="row">
 				<div class="col-lg-6">
 					<%= link_to root_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
@@ -107,7 +113,7 @@
 		<div class="col-lg-12">
 			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whois_charity_title") %></h1>
 		</div>
-		<div class="col-lg-12">
+		<div class="col-lg-12" style="margin-top:20px;">
 			<div class="row">
 				<div class="col-lg-6">
 					<%= link_to url_association_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
@@ -121,9 +127,9 @@
 	<!-- Sponsors -->
 	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
 		<div class="col-lg-12">
-			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whoare_sponsors_title") %> ? </h1>
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whoare_sponsors_title") %></h1>
 		</div>
-		<div class="col-lg-12">
+		<div class="col-lg-12" style="margin-top:20px;">
 			<div class="row">
 				<div class="col-lg-6">
 					<%= link_to url_sponsors_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
@@ -139,7 +145,7 @@
 		<div class="col-lg-12">
 			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("contactus_title") %></h1>
 		</div>
-		<div class="col-lg-12">
+		<div class="col-lg-12" style="margin-top:20px;">
 			<div class="row">
 				<div class="col-lg-6">
 					<%= link_to url_contacts_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-12' do %>
@@ -179,7 +185,7 @@
 
 		<div class="row" style="margin-top:30px;">
 			<div class="col-lg-12">
-				<p><h3 class="secondarycolor"> <%= t("donation_per_km") %> : <%= number_with_precision(@donation_sum_euro, precision: 2) %> (1 EURO = 1 USD) </h3></p>
+				<p><h3 class="secondarycolor"> <%= t("donation_per_km") %> : <%= number_with_precision(@donation_sum_euro, precision: 2) %> USD </h3></p>
 			</div>
 		</div>
 
@@ -191,7 +197,7 @@
 			</div>
 		</div>
 
-		<div id="container-vn" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		<!--<div id="container-vn" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
 
 		<div class="row">
 			<div class="col-lg-12">
@@ -247,7 +253,7 @@
     $(function () {
 	    $('#container-us-eu').highcharts({
 	        title: {
-	            text: 'Total possible gain for the assocation depending on Nicolas\'s performance',
+	            text: 'Cumulative Donation per kilometer to date (represented in USD)',
 	            x: -20 //center
 	        },
 	        xAxis: {
@@ -280,7 +286,7 @@
 	        },
 	        series: [
 	        {
-	            name: 'EURO - USD',
+	            name: 'USD',
 	            color: '#03a9f4',
 	            data: [<%= number_with_precision(@donation_sum_euro_array[0], precision: 2) %> , 
 	            <%= number_with_precision(@donation_sum_euro_array[1], precision: 2) %>, 
@@ -305,7 +311,7 @@
 	    });
 
 
-		$('#container-vn').highcharts({
+		/*$('#container-vn').highcharts({
 	        title: {
 	            text: 'Total possible gain for the assocation depending on Nicolas\'s performance',
 	            x: -20 //center
@@ -361,7 +367,7 @@
 	        },
 
 	        ]
-	    });
+	    });*/
 
 	});
 

@@ -32,15 +32,16 @@ fr:
   # INDEX
   index_welcome_nicolas_website: "Bienvenue !"
   introduction_title: "Introduction"
-  whatis_diagonale_title: "Qu'est-ce que 'La diagonale des fous'"
-  whois_nicolas_title: "Qui est Nicolas"
-  how_support_title: "Comment l'argent va-t-elle être récoltée ? Comment pouvez-vous participer ?"
+  whatis_diagonale_title: "La Diagonale des Fous - The Madmen's Diagonal"
+  whois_nicolas_title: "Nicolas"
+  how_support_title: "A lire avant de faire une donation"
   whois_charity_title: "L'association 'Les enfants du Dragon'"
-  whoare_sponsors_title: "Qui sont les sponsors"
-  contactus_title: "Contactez-nous"
+  whoare_sponsors_title: "Mes sponsors"
+  contactus_title: "Contactez-moi"
   has_made_donation: "Dernières donations"
   donation_per_km: "Total des donations par kilomètre"
   make_new_donation: "Faire une promesse de dons"
+  timer_remaining_time: "TEMPS RESTANT AVANT LA COURSE"
 
   # NEW DONATION
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
@@ -49,7 +50,7 @@ fr:
   # LINK TO STATIC PAGES
   diagonale_des_fous: "La diagonale des fous"
   association: "L\'association"
-  my_sponsor: "Mon sponsor"
+  my_sponsor: "Mes sponsors"
   links: "Liens"
   contacts: "Contacts"
 
