@@ -49,6 +49,7 @@ en:
   donation_per_km: "Donation sum per kilometer"
   make_new_donation: "Make a new donation's promise"
   timer_remaining_time: "TIME TO THE RACE"
+  see_all_donations: "See all donations"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"

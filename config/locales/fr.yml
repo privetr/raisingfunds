@@ -42,6 +42,7 @@ fr:
   donation_per_km: "Total des donations par kilomètre"
   make_new_donation: "Faire une promesse de dons"
   timer_remaining_time: "TEMPS RESTANT AVANT LA COURSE"
+  see_all_donations: "Voir toutes les donations"
 
   # NEW DONATION
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"

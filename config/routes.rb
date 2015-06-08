@@ -12,8 +12,10 @@ Rails.application.routes.draw do
     get '/association' => 'welcome#association', :as =>'url_association'
     get '/sponsors' => 'welcome#sponsors', :as =>'url_sponsors'
     get '/links' => 'welcome#links', :as =>'url_links'
+    get '/read_before_donation' => 'welcome#readbeforedonation', :as =>'url_read_before_donation'
     get '/contacts' => 'welcome#contacts', :as =>'url_contacts'
     get '/admin_site_nico' => 'welcome#adminsitenico', :as =>'url_adminsitenico'
+    get '/list_donations' => 'welcome#listdonations', :as =>'url_list_donations'
   end
 
   #get 'welcome/index'
