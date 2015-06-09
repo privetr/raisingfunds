@@ -52,6 +52,10 @@ class WelcomeController < ApplicationController
 
   end
 
+  def gallerydiagonale
+
+  end
+
   def nicolasprivet
 
   end

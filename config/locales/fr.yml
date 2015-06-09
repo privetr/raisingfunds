@@ -24,7 +24,8 @@ fr:
   # ALL PAGES
   application_title_navbar: 'Running "Le grand raid" for a cause'
   save: "Enregistrer"
-  gallery: "Gallerie de photos"
+  gallery: "Galerie de photos"
+  gallery_diagonale: "Galerie de photos de la Réunion"
   read_more: "Voir plus"
   name_enfants_dragon: "Les enfants du Dragon"
   address: "Adresse"

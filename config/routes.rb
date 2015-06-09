@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
     # static pages
     get '/diagonale-des-fous' => 'welcome#diagonale', :as =>'url_diagonale'
+    get '/diagonale-des-fous-gallery' => 'welcome#gallerydiagonale', :as =>'url_gallerydiagonale'
     get '/nicolas-privet' => 'welcome#nicolasprivet', :as =>'url_nicolasprivet'
     get '/nicolas-privet-gallery' => 'welcome#gallerynicolasprivet', :as =>'url_gallerynicolasprivet'
     get '/association' => 'welcome#association', :as =>'url_association'
