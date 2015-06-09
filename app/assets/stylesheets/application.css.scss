@@ -34,6 +34,7 @@ $Yellow:#ffeb3b;
 $YellowDark:#fdd835;
 $Green:#4caf50;
 $RedDark: #d50000;
+$LightGrey: #f5f5f5;
 
 .roboto-regular{
     font-family: 'Roboto Regular';
@@ -151,6 +152,7 @@ $RedDark: #d50000;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
+    box-shadow: 0px 0px 3px #888888;
     border-color: #eee;
     border-radius: 3px;
     border-style: solid;
@@ -159,6 +161,11 @@ $RedDark: #d50000;
     padding: 20px;
     font-size:16px;
     color:#212121;
+    min-height:100px;
+}
+
+.content-fund-description:hover{
+    background-color: $LightGrey;
 }
 
 html {
@@ -174,7 +181,6 @@ html {
 
 .timer-title { 
     font-family: 'Raleway',sans-serif; 
-    font-size: 40px; 
     font-weight: 800; 
     line-height: 72px; 
     margin: 0 0 24px; 

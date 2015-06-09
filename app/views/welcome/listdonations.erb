@@ -1,0 +1,43 @@
+<div class="container roboto-regular" style="margin-top: 50px;">
+	<div class="bs-callout bs-callout-yellow row">
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("list_donations") %></h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="row" style="margin:0px; padding:0px;">
+			<% @funds.each do |fund| %>
+				
+					<div class="col-lg-5 content-fund-description" style="margin:5px; margin-right:20px; padding:10px;">
+						<p> <span class="secondarycolor bold"><%= fund.firstname %> <%= fund.lastname %></span> 
+						<!--<%= fund.donation_value %>
+						<% if fund.devise == "euro" %>
+							Euros
+						<% elsif fund.devise == "usd" %>
+							USD
+						<% else fund.devise == "dong" %>
+							Dongs
+						<% end %> 
+						 per Km-->
+							<span style="float: right;"> (<%= fund.created_at.strftime("%d %b %y") %>)</span> 
+						</p>
+						<p><i><%= fund.comment %></i></p>
+					</div>
+				
+		  	<% end %>
+		  	</div>
+		</div>
+	</div>
+
+	<div class="row" style="margin-top:20px; margin-bottom:20px;">
+		<div class="col-lg-12">
+			<div class="col-lg-6 col-lg-push-3">
+				<%= image_tag "asso/merci.png", class:"img-responsive" %>
+			</div>
+		</div>
+	</div>
+
+</div>
+

@@ -19,14 +19,14 @@
 				<div class="text-center col-xs-12">
 					<!--<a href="http://www.grandraid-reunion.com/" target="_blank"><%= image_tag "logo_ddf.png", class: "col-xs-1 logo-ddf-home" %></a>-->
 
-					<%= link_to root_path, class: "white col-xs-1", style:"margin-top:20px;" do %>
-					  <span class="glyphicon glyphicon-home white"></span>
+					<%= link_to root_path, class: "white col-xs-1", style:"margin-top:15px;" do %>
+					  <span class="glyphicon glyphicon-home white" style="font-size: 1.8em;"></span>
 					<% end %>
 
-					<h4 id="website_url" class="secondarycolordark col-xs-4 col-xs-push-3 roboto-regular" style="padding-top:10px;"><b><%= t("application_title_navbar") %></b></h4>
+					<h4 id="website_url" class="white col-xs-4 col-xs-push-3 roboto-regular" style="padding-top:10px;"><b><%= t("application_title_navbar") %></b></h4>
 
-					<%= link_to_unless I18n.locale == :en, image_tag('en.svg', style:"height:25px; width:30px; margin-top:20px;"), locale: :en %>
-					<%= link_to_unless I18n.locale == :fr, image_tag('fr.svg', style:"height:25px; width:30px; margin-top:20px;"), locale: :fr %>
+					<%= link_to_unless I18n.locale == :en, image_tag('en.svg', style:"height:25px; width:30px; margin-top:15px; "), locale: :en %>
+					<%= link_to_unless I18n.locale == :fr, image_tag('fr.svg', style:"height:25px; width:30px; margin-top:15px;"), locale: :fr %>
 
 				</div>
 			</div>

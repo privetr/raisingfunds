@@ -43,6 +43,8 @@ fr:
   make_new_donation: "Faire une promesse de dons"
   timer_remaining_time: "TEMPS RESTANT AVANT LA COURSE"
   see_all_donations: "Voir toutes les donations"
+  list_donations: "Liste des donations"
+  start_date: "22 Octobre 2015, 22h00 Heure locale"
 
   # NEW DONATION
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
