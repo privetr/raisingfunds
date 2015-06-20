@@ -1,6 +1,6 @@
 
-<div style="margin-top: 50px;">
-	<%= image_tag "new_banner.png", class: "img-home-banner" %>
+<div style="margin-top: 50px; padding:0; width:100%" id="div_main_banner" class="img-wrapper">
+	<%= image_tag "main1.JPG", class: "img-home-banner" %>
 </div>
 
 <div class="container roboto-regular">
@@ -264,6 +264,16 @@
 <script type="text/javascript">
 	$('#countdownContainer').countdown({until: new Date(2015, 10 - 1, 22, 20, 00, 00, 000)});	
 	//new Date(year, month, day, hours, minutes, seconds, milliseconds) 
+
+	    setTimeout(function(){
+	    $("#div_main_banner").addClass("img-wrapper-zoom");
+	    },100);
+
+	    setTimeout(function(){
+	    $("#div_main_banner").removeClass("img-wrapper-zoom");
+	    },20000);
+
+
 </script>
 
 <script type="text/javascript">

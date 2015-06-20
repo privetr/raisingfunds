@@ -191,3 +191,26 @@ html {
 .remove-link:link{
     text-decoration: none;
 }
+
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    -webkit-transition: all 20s ease;
+    -moz-transition: all 20s ease;
+    -ms-transition: all 20s ease;
+    -o-transition: all 20s ease;
+    transition: all 20s ease;
+    
+    vertical-align: middle;
+}
+
+.img-wrapper-zoom img {
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* IE 9 */
+    -o-transform:scale(1.2); /* Opera */
+    transform:scale(1.2);
+}
