@@ -1,0 +1,8 @@
+[2015-05-08 20:14:19] INFO  WEBrick 1.3.1
+[2015-05-08 20:14:19] INFO  ruby 2.1.2 (2014-05-08) [x86_64-linux-gnu]
+[2015-05-08 20:14:19] INFO  WEBrick::HTTPServer#start: pid=8161 port=1712
+=> Booting WEBrick
+=> Rails 4.1.8 application starting in production on http://0.0.0.0:1712
+=> Run `rails server -h` for more startup options
+=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+=> Ctrl-C to shutdown server
