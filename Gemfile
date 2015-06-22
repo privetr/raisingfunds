@@ -54,3 +54,6 @@ gem 'pg', '~> 0.18.1'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
+#Meta head
+gem 'metamagic'
+
