@@ -63,6 +63,8 @@ GEM
     json (1.8.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    metamagic (3.1.7)
+      rails (>= 3.0.0)
     mime-types (2.4.3)
     minitest (5.5.1)
     multi_json (1.11.0)
@@ -130,6 +132,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  metamagic
   pg (~> 0.18.1)
   rails (= 4.1.8)
   sdoc (~> 0.4.0)
