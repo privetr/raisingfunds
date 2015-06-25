@@ -24,6 +24,16 @@ meta title: "Runforacause.fr - Home",
 		</div>
 	</div>
 
+	<div class="row">
+		<div class="col-lg-12">
+				
+			<%= link_to new_fund_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-6 col-lg-push-3' do %>
+			  <h3><i class="glyphicon glyphicon-plus"></i> <%= t("make_new_donation") %> </h3>
+			<% end %>
+
+		</div>
+	</div>
+
 	<!-- Introduction -->
 	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
 		<div class="col-lg-12">
@@ -218,6 +228,7 @@ meta title: "Runforacause.fr - Home",
 		<div class="row" style="margin-top:30px;">
 			<div class="col-lg-12">
 				<p><h3 class="secondarycolor"> <%= t("donation_per_km") %> : <%= number_with_precision(@donation_sum_euro, precision: 2) %> USD </h3></p>
+				<p><h3 class="secondarycolor"> <%= t("donation_total_sum") %> : <%= number_with_precision(@donation_sum_euro * 163, precision: 2) %> USD </h3></p>
 			</div>
 		</div>
 
@@ -226,6 +237,7 @@ meta title: "Runforacause.fr - Home",
 		<div class="row">
 			<div class="col-lg-12">
 				<p><h3 class="secondarycolor"> <%= t("donation_per_km") %> : <%= number_with_precision(@donation_sum_dong, precision: 0) %> (Dongs) </h3></p>
+				<p><h3 class="secondarycolor"> <%= t("donation_total_sum") %> : <%= number_with_precision(@donation_sum_dong * 163, precision: 0) %> (Dongs) </h3></p>
 			</div>
 		</div>
 

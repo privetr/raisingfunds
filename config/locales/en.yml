@@ -48,6 +48,7 @@ en:
   contactus_title: "Contact me"
   has_made_donation: "Last donations"
   donation_per_km: "Donation sum per kilometer"
+  donation_total_sum: "Donation sum for the race"
   make_new_donation: "Make a new donation's promise"
   timer_remaining_time: "TIME TO THE RACE"
   see_all_donations: "See all donations"
