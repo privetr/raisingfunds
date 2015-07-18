@@ -4,6 +4,9 @@ meta title: "Runforacause.fr - Home",
      keywords: %w(Nicolas Privet Diagonale fous Enfants dragon trail Reunion Vietnam)
 %>
 
+<!-- for Translating large contents -->
+<%= render :partial => 'index_contents' %>
+
 <div style="margin-top: 50px; padding:0; width:100%" id="div_main_banner" class="img-wrapper">
 	<%= image_tag "main1.JPG", class: "img-home-banner" %>
 </div>
@@ -34,13 +37,24 @@ meta title: "Runforacause.fr - Home",
 		</div>
 	</div>
 
+	<div class="row" style="padding-top: 20px;">
+		<center>
+			<div class="col-lg-12">
+				<p><h4 class="secondarycolor"> <%= t("donation_per_km") %> : <%= number_with_precision(@donation_sum_euro, precision: 2) %> USD </h4></p>
+				<p><h4 class="secondarycolor"> <%= t("donation_total_sum") %> : <%= number_with_precision(@donation_sum_euro * 163, precision: 2) %> USD </h4></p>
+			</div>
+		</center>
+	</div>
+
 	<!-- Introduction -->
 	<div class="bs-callout bs-callout-secondarycolor row" style="margin-top:20px;">
 		<div class="col-lg-12">
 			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("introduction_title") %></h1>
 		</div>
 		<div class="col-lg-12" style="">
-			<p>Welcome!!</p>
+
+			<%= yield :content_intro %>
+			<!--<p>Welcome!!</p>
 
 			<p>Thank you for visiting this page!<br>
 			My objective here is to raise fund in a ludic way for a charity association “Les Enfants du Dragon” ; which is doing great things in Vietnam to support kids and their families in need. You can learn more about the association in the dedicated part of this website and directly on their website.</p>
@@ -55,7 +69,7 @@ meta title: "Runforacause.fr - Home",
 
 			<p>If anything is unclear to you, please contact me directly at Nicolas.privet@gmail.com, I will reply asap.</p>
 
-			<p class="secondarycolor"><b>Enjoy the visit!</b></p>
+			<p class="secondarycolor"><b>Enjoy the visit!</b></p>-->
 
 		</div>
 	</div>

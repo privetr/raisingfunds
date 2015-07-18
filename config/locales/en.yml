@@ -57,7 +57,8 @@ en:
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"
-  new_title_devise_donation: "Choose the devise for donation"
+  new_title_devise_donation: "Choose the currency for donation"
+  new_title_comment: "Leave a message to Nicolas"
 
   # LINKS TO WEBSITES
   link_diagonale: "http://www.grandraid-reunion.com/?lang=en"

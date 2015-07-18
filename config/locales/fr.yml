@@ -51,6 +51,7 @@ fr:
   # NEW DONATION
   new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
   new_title_devise_donation: "Choisir la devise pour le don"
+  new_title_comment: "Laissez un message à Nicolas"
 
   # LINK TO STATIC PAGES
   diagonale_des_fous: "La diagonale des fous"
@@ -82,6 +83,6 @@ fr:
         firstname: "Prénom"
         lastname: "Nom"
         donation_value: "Valeur du don"
-        comment: "Commentaire"
+        comment: "Laissez un message à Nicolas"
 
 
