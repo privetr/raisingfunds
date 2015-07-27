@@ -14,18 +14,39 @@ meta title: "Runforacause.fr - Home",
 <div class="container roboto-regular">
 
 	<div class="row">
-		<div class="row">
-			<div class="col-lg-12" style="padding-top:20px;">
-				<center><h3 style="text-transform: uppercase; font-size: 40px;" class="timer-title secondarycolor"><%= t("timer_remaining_time") %> :</h3></center>
-			</div>
-			<div class=" col-lg-4 col-lg-push-4">
-				<div id="countdownContainer" style="height: 45px; background-color:white; border:none;"></div>
-			</div>
-			<div class="col-lg-12" style="padding-top:20px;">
-				<center><h5 style="text-transform: uppercase;font-size:20px" class="timer-title secondarycolor"><%= t("start_date") %></h5></center>
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="col-lg-3" style="padding-top:20px;">
+					<div class="row col-lg-12">
+						<i><%= t("project_sponsorized") %></i>
+					</div>
+					<div class="row col-lg-8 col-lg-push-2">
+						<a href="http://thusports.com.vn" target="_blank">
+							<%= image_tag "contact/salomon.jpg", class:"img-responsive" %>
+						</a>
+					</div>
+					<div class="row col-lg-10 col-lg-push-1">
+						<a href="https://www.facebook.com/groups/342286199158879/?ref=ts&fref=ts" target="_blank">
+							<%= image_tag "contact/ruby.png", class:"img-responsive" %>
+						</a>
+					</div>
+					
+				</div>
+				<div class="col-lg-6">
+					<div class="col-lg-12" style="padding-top:20px;">
+						<center><h3 style="text-transform: uppercase; font-size: 40px;" class="timer-title secondarycolor"><%= t("timer_remaining_time") %> :</h3></center>
+					</div>
+					<div class=" col-lg-12">
+						<div id="countdownContainer" style="height: 45px; background-color:white; border:none;"></div>
+					</div>
+					<div class="col-lg-12" style="padding-top:20px;">
+						<center><h5 style="text-transform: uppercase;font-size:20px" class="timer-title secondarycolor"><%= t("start_date") %></h5></center>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
 
 	<div class="row">
 		<div class="col-lg-12">
