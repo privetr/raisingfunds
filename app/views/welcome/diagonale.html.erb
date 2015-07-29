@@ -13,13 +13,9 @@ meta title: "Runforacause.fr - Diagonale",
 			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("whatis_diagonale_title") %></h1>
 		</div>
 		<div class="col-lg-6">
-			<b class="secondarycolordark">Name :</b> La Diagonale des Fous - (The Madmen's Diagonal)<br><br>
-			<b class="secondarycolordark">Since :</b> 1989<br><br>
-			<b class="secondarycolordark">Distance :</b> <b class="reddark">163 Km</b><br><br>
-			<b class="secondarycolordark">Elevation :</b> <b class="reddark">9’920 m</b><br><br>
-			<b class="secondarycolordark">When :</b> October 22nd to 25th 2015<br><br>
-			<b class="secondarycolordark">Where :</b> La Réunion Island<br><br>
-			<b class="secondarycolordark">Website :</b> <a href="<%= t("link_diagonale") %>" target="_blank"><%= t("link_diagonale") %></a><br>
+
+			<%= yield :content_intro_diagonale %>
+
 		</div>
 		<div class="col-lg-6">
 			<%= image_tag "diagonale/mapworld.png", class: "img-responsive" %>

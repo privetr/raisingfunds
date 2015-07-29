@@ -4,6 +4,9 @@ meta title: "Runforacause.fr - Nicolas",
      keywords: %w(Nicolas Privet Diagonale fous Enfants dragon Vietnam race)
 %>
 
+<!-- for Translating large contents -->
+<%= render :partial => 'nicolasprivet_contents' %>
+
 <div class="container roboto-regular" style="margin-top: 50px;">
 	<div class="bs-callout bs-callout-yellow row">
 		<div class="col-lg-12">
@@ -15,32 +18,8 @@ meta title: "Runforacause.fr - Nicolas",
 	</div>
 
 	<div class="col-lg-12" style="margin-top:20px; font-size:16px;">
-		Nicolas is a 33 years old man, born in France, living and working in Vietnam since 2006. <br><br>
-
-		<h4><b class="reddark">His start in running</b></h4>
-
-		Nicolas started running very recently, less than 2 years ago, with his first race being a 10km in December 2013. One month later his first race, in January 2014, he was joining and achieving a 50km trail running race in Thailand.<br>
-
-		One year later, after keeping training and joining few more races, in January 2015, Nicolas went back to Thailand and ran his first 100 km with a satisfying result, as ranked 29 on 191 participants. Having done this, Nicolas owned enough points to register for some thing crazy...<br><br>
-
-		It is this day that the decision to join "La diagonale des fous" was taken! A single stage race of 163km for 9920 meters elevation. #Insane...<br><br>
 		
-		<h4><b class="reddark">Nicolas and "La Reunion Island" </b></h4>
-
-		Nicolas knows well the place… He was there in 2005 for 5 weeks and when he was not drinking rhum and enjoying Zamal, he spent most of his time hiking around the 3 circus and the volcano with his friend Jojo!  What do I remember from this experience: "Gorgeous landscape, fauna and flora, Nice people, Super hot weather, Very technical trails, Crazy elevation" <br><br>
-
-		<h4><b class="reddark">#RunForACause </b></h4>
-
-		To empower his new challenge, have an impact and also harden his motivation, Nicolas has decided to do not race only for himself, but to support a charity association, at each footstep he will make during the race… Nicolas has then contacted the French managed charity based in Vietnam, Les Enfants Du Dragon, which has shown great interest in being part of the adventure. <br>
-
-		<h3><b class="reddark">Note that 100% of donated money will go directly to the Charity “Les Enfants du Dragon”  </b></h3><br>
-
-		<h4><b class="reddark">Training </b></h4>
-
-		The training content ,...
-		The heat in Vietnam in which Nicolas is used to train will support him in achieving this race, But, ... , Ho Chi Minh Area is desperately flat, which is a major challenge for hill training. To compensate for it, Nicolas trains in high building stair cage (24 floors) and loves his jumping rope! <br><br><br>
-
-		<h4><b class="reddark">Last few running races that Nicolas recently joined: </b></h4>
+		<%= yield :content_nicolasprivet %>
 
 		<div class="table-responsive">
 			<table class="table table-bordered">
@@ -126,14 +105,7 @@ meta title: "Runforacause.fr - Nicolas",
 		</div>
 		<br>
 
-		<h4><b class="reddark">Others sports events where Nicolas had fun, gained experience in managing pain... , and of course finished!  </b></h4>
-		<ul>
-			<li>Ta Lai Trophy 2015 & 2014: Quadriathlon in the Vietnamese Jungle ; Kayak, swimming, mountain Bike, off road running</li>
-			<li>Dragon Dash 2015 HCMC</li>
-			<li>Danang International Marathon 2014, ...</li>
-		</ul>
-		<br><br>
-		<h3><b class="reddark">Here, Nicolas will update here regularly on his training status, conditions and publish articles on his equipments, nutrition, ...</b></h3>
+		<%= yield :content_conclusion %>
 
 		<div class="bs-callout bs-callout-yellow row">
 			<div class="col-lg-6">

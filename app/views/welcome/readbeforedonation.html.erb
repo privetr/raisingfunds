@@ -1,0 +1,51 @@
+<%
+meta title: "Runforacause.fr - Before Donations",
+     description: "Nicolas Privet's website, to raise fund for charity organization Les Enfants Du Dragon. Diagonale des fous.",
+     keywords: %w(Nicolas Privet Diagonale fous Enfants dragon donation info)
+%>
+
+<!-- for Translating large contents -->
+<%= render :partial => 'readbeforedonation_contents' %>
+
+<div class="container roboto-regular" style="margin-top: 50px;">
+	<div class="bs-callout bs-callout-yellow row">
+
+		<div class="col-lg-12">
+			<h1 class="secondarycolor" style="margin-bottom:30px;"><%= t("how_support_title") %></h1>
+		</div>
+
+		<div class="col-lg-12">
+
+			<%= yield :content_intro %>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12" style="font-size:16px;">
+
+			<%= yield :content_readbeforedonation %>
+			
+		</div>
+	</div>
+
+	<div class="row" style="margin-top:20px; margin-bottom:20px;">
+		<div class="col-lg-12">
+			<div class="col-lg-6 col-lg-push-3">
+				<%= image_tag "asso/merci.jpg", class:"img-responsive" %>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53426890-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
