@@ -8,11 +8,11 @@ meta title: "Runforacause.fr - Your donation",
 
 	<div class="bs-callout bs-callout-secondarycolor row" style="text-size:16px;">
 
-		<h1 class="secondarycolor text-center">Summary</h1>
+		<h1 class="secondarycolor text-center"><%= t("summary") %></h1>
 
 		<div class="row">
 			<div class="col-lg-2">
-				Donor :
+				<%= t("donor") %> :
 			</div>
 			<div class="col-lg-10">
 			 	<%= @fund.firstname %> <%= @fund.lastname %>
@@ -30,7 +30,7 @@ meta title: "Runforacause.fr - Your donation",
 
 		<div class="row">
 			<div class="col-lg-2">
-				Donation by km :
+				<%= t("donation_by_km") %>
 			</div>
 			<div class="col-lg-10">
 			 	<%= @fund.donation_value %> <%= @fund.devise %>
@@ -39,7 +39,7 @@ meta title: "Runforacause.fr - Your donation",
 
 		<div class="row">
 			<div class="col-lg-2">
-				Comment to Nicolas :
+				<%= t("message_to_nicolas") %>
 			</div>
 			<div class="col-lg-10">
 			 	<%= @fund.comment %>
@@ -48,7 +48,10 @@ meta title: "Runforacause.fr - Your donation",
 		<br>
 		<div class="row">
 			<div class="col-lg-12">
-				<%= link_to 'Back to Home', root_path, class: "bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-4 col-lg-push-4" %>
+
+				<%= link_to root_path, class: 'bold btn btn-default secondarycolor-bg white uppercase btn-secondarycolor-hover col-lg-4 col-lg-push-4' do %>
+					<%= t("back_to_home") %> <i class="glyphicon glyphicon-chevron-right"></i> 
+				<% end %>
 			</div>
 		</div>
 

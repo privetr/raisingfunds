@@ -22,41 +22,57 @@
 fr:
 
   # ALL PAGES
-  application_title_navbar: 'Running "Le grand raid" for a cause'
-  save: "Enregistrer"
-  gallery: "Galerie de photos"
+  application_title_navbar: 'Courir "Le Grand Raid" pour une cause'
+  save: "Confirmer"
+  gallery: "Galerie photos"
   gallery_diagonale: "Galerie de photos de la Réunion"
-  read_more: "Voir plus"
+  read_more: "En savoir plus"
   name_enfants_dragon: "Les enfants du Dragon"
   address: "Adresse"
 
   # INDEX
   index_welcome_nicolas_website: "Bienvenue !"
   introduction_title: "Introduction"
-  whatis_diagonale_title: "La Diagonale des Fous - The Madmen's Diagonal"
+  whatis_diagonale_title: "La Diagonale des Fous"
   whois_nicolas_title: "Nicolas"
-  how_support_title: "A lire avant de faire une donation"
+  how_support_title: "A lire avant de faire un don"
   whois_charity_title: "L'association 'Les enfants du Dragon'"
   whoare_sponsors_title: "Mes sponsors"
   contactus_title: "Contactez-moi"
-  has_made_donation: "Dernières donations"
+  has_made_donation: "Derniers dons"
   donation_per_km: "Total des donations par kilomètre"
   donation_total_sum: "Total des donations pour la course"
-  make_new_donation: "Faire une promesse de dons"
+  make_new_donation: "Faire une promesse de don"
   timer_remaining_time: "TEMPS RESTANT AVANT LA COURSE"
-  see_all_donations: "Voir toutes les donations"
+  see_all_donations: "Voir tous les dons"
   list_donations: "Liste des donations"
   start_date: "22 Octobre 2015, 22h00 Heure locale"
   project_sponsorized: "Projet sponsorisé par"
+  donation_sum_this_date: "Dons cumulés par kilomètre à ce jour"
 
   # NEW DONATION
-  new_title_donation: "Faire une promesse de don par kilomètre parcouru par Nicolas Privet"
+  new_title_donation: "Faire une promesse de don par kilomètre parcourus par Nicolas"
   new_title_devise_donation: "Choisir la devise pour le don"
   new_title_comment: "Laissez un message à Nicolas"
 
-  #SPONSORS
+  # DIAGONALE
+  official_race_facebook_page: "Page facebook officielle"
+  official_race_website: "Site web officiel"
+
+  # SUMMARY DONATION
+  summary: "Résumé"
+  donor: "Donneur"
+  donation_by_km: "Don par km"
+  message_to_nicolas: "Message à Nicolas"
+  back_to_home: "Retour à l'accueil"
+
+  # SPONSORS
   facebook_page: "Page Facebook"
   website: "Site Internet"
+
+  # CONTACTS
+  facebook_website_page: "Page Facebook du site"
+  phone: "Téléphone"
 
   # LINK TO STATIC PAGES
   diagonale_des_fous: "La diagonale des fous"
@@ -87,7 +103,7 @@ fr:
       fund:
         firstname: "Prénom"
         lastname: "Nom"
-        donation_value: "Valeur du don"
-        comment: "Laissez un message à Nicolas"
+        donation_value: "Montant du don"
+        comment: "Laisser un message à Nicolas"
 
 

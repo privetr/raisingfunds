@@ -55,15 +55,31 @@ en:
   list_donations: "Donations List"
   start_date: "October 22, 2015, 10:00pm Local time"
   project_sponsorized: "Project sponsorized by"
+  donation_sum_this_date: "Cumulative Donation per kilometer to date"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"
   new_title_devise_donation: "Choose the currency for donation"
   new_title_comment: "Leave a message to Nicolas"
 
+   # DIAGONALE
+  official_race_facebook_page: "Official Race Facebook Page"
+  official_race_website: "Official race website"
+
+  # SUMMARY DONATION
+  summary: "Summary"
+  donor: "Donor"
+  donation_by_km: "Donation by km"
+  message_to_nicolas: "Message to Nicolas"
+  back_to_home: "Back to Home"
+
   #SPONSORS
   facebook_page: "Facebook Page"
   website: "Website"
+
+  # CONTACTS
+  facebook_website_page: "Facebook Website Page"
+  phone: "Phone"
 
   # LINKS TO WEBSITES
   link_diagonale: "http://www.grandraid-reunion.com/?lang=en"
