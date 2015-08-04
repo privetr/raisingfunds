@@ -1,0 +1,85 @@
+﻿# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+vi:
+
+  # ALL PAGES
+  application_title_navbar: 'Running "Le grand raid" for a cause'
+  save: "Save"
+  gallery: "Xem ảnh"
+  gallery_diagonale: "Reunion Photo Gallery"
+  read_more: "Đọc thêm"
+  name_enfants_dragon: "The children of the Dragon"
+  address: "Địa chỉ"
+
+  # STATIC PAGES
+  diagonale_des_fous: "La diagonale des fous"
+  association: "The Charity Organization"
+  my_sponsor: "Sponsorships"
+  links: "Links"
+  contacts: "Địa chỉ liên lạc của tôi"
+
+  # INDEX
+  index_welcome_nicolas_website: 'Welcome !'
+  introduction_title: "Giới thiệu"
+  whatis_diagonale_title: "La Diagonale des Fous - The Madmen's Diagonal"
+  whois_nicolas_title: "Nicolas"
+  how_support_title: "Xin vui lòng đọc kĩ thông tin trước khi thực hiện đóng góp"
+  whois_charity_title: 'Tổ chức từ thiện "Les enfants du dragon" – Những Đứa Con Của Rồng'
+  whoare_sponsors_title: "Những nhà tài trợ của tôi "
+  contactus_title: "Địa chỉ liên lạc của tôi"
+  has_made_donation: "Last donations"
+  donation_per_km: "Số tiền đóng góp cho mỗi cây số"
+  donation_total_sum: "Tổng số tiền đóng góp cho cuộc đua"
+  make_new_donation: "Hãy cam kết đóng góp"
+  timer_remaining_time: "ĐẾM NGƯỢC"
+  see_all_donations: "See all donations"
+  list_donations: "Donations List"
+  start_date: "NGÀY 22 THÁNG 10 NĂM 2015, 10:00 GIỜ TỐI THEO GIỜ ĐỊA PHƯƠNG"
+  project_sponsorized: "Project sponsorized by"
+  donation_sum_this_date: "Số tiền đóng góp cho mỗi cây số"
+
+  # NEW DONATION
+  new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"
+  new_title_devise_donation: "Choose the currency for donation"
+  new_title_comment: "Leave a message to Nicolas"
+
+   # DIAGONALE
+  official_race_facebook_page: "Trang Facebook chính thức của cuộc đua"
+  official_race_website: "Trang web chính thức"
+
+  # SUMMARY DONATION
+  summary: "Summary"
+  donor: "Donor"
+  donation_by_km: "Donation by km"
+  message_to_nicolas: "Message to Nicolas"
+  back_to_home: "Back to Home"
+
+  #SPONSORS
+  facebook_page: "Facebook Page"
+  website: "Website"
+
+  # CONTACTS
+  facebook_website_page: "Facebook Website Page"
+  phone: "Phone"
+
+  # LINKS TO WEBSITES
+  link_diagonale: "http://www.grandraid-reunion.com/?lang=en"

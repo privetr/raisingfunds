@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  scope "(:locale)", :locale => /en|fr/ do
+  scope "(:locale)", :locale => /en|fr|vi/ do
     root :to => 'welcome#index'
     get "page/index"
 
