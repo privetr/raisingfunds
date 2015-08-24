@@ -56,6 +56,8 @@ en:
   start_date: "October 22, 2015, 10:00pm Local time"
   project_sponsorized: "Project sponsorized by"
   donation_sum_this_date: "Cumulative Donation per kilometer to date"
+  newsletter_title: "News"
+  august_news: "August news"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"

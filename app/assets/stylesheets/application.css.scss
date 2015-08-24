@@ -117,6 +117,10 @@ $LightGrey: #f5f5f5;
     border-top-color: $MainColor;
 }
 
+.bs-callout-red{
+    border-top-color: $RedDark;
+}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -213,4 +217,8 @@ html {
     -ms-transform:scale(1.2); /* IE 9 */
     -o-transform:scale(1.2); /* Opera */
     transform:scale(1.2);
+}
+
+.bottom-shadow{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.26);
 }

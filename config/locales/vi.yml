@@ -56,6 +56,8 @@ vi:
   start_date: "NGÀY 22 THÁNG 10 NĂM 2015, 10:00 GIỜ TỐI THEO GIỜ ĐỊA PHƯƠNG"
   project_sponsorized: "Project sponsorized by"
   donation_sum_this_date: "Số tiền đóng góp cho mỗi cây số"
+  newsletter_title: "Tin tức"
+  august_news: "Tháng tám tin tức"
 
   # NEW DONATION
   new_title_donation: "Make a new donation's promise by Kilometer ran by Nicolas"

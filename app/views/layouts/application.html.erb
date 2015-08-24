@@ -23,7 +23,7 @@
 					  <span class="glyphicon glyphicon-home white" style="font-size: 1.8em;"></span>
 					<% end %>
 
-					<h4 id="website_url" class="white col-xs-4 col-xs-push-3 roboto-regular" style="padding-top:10px;"><b><%= t("application_title_navbar") %></b></h4>
+					<h4 id="website_url" class="white col-xs-4 col-xs-push-1 roboto-regular col-lg-4 col-lg-push-3" style="padding-top:10px;"><b><%= t("application_title_navbar") %></b></h4>
 
 					<%= link_to_unless I18n.locale == :en, image_tag('en.svg', style:"height:30px; width:35px; margin-top:15px; "), locale: :en %>
 					<%= link_to_unless I18n.locale == :fr, image_tag('fr.svg', style:"height:30px; width:35px; margin-top:15px;"), locale: :fr %>
