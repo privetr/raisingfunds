@@ -89,7 +89,7 @@ meta title: "Runforacause.fr - Home",
 		<div class="col-lg-12" style="margin-top:20px;">
 			<div class="row">
 				<div class="col-lg-6">
-					<%= link_to '/assets/Newletter_Runforacause.pdf', :class => "btn btn-large btn-danger col-lg-12", target: "_blank" do %>
+					<%= link_to asset_path('Newletter_Runforacause.pdf', :digest => false), :class => "btn btn-large btn-danger col-lg-12", target: "_blank" do %>
 						<%= t("august_news") %> <i class="glyphicon glyphicon-chevron-right"></i> 
 					<% end %>
 				</div>
